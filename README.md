@@ -11,7 +11,7 @@ Lean 4 formalization of the [final manuscript](paper/chen-KE-Ball-Symmetry-2026.
 | Corollary 1.3, finite exponential integral and critical inequality | [`criticalInequality`](KEBallComparator/Solution.lean#L39) |
 | Sharp energy coefficient and additive constant | [`optimalEnergyCoefficient`](KEBallComparator/Solution.lean#L28) and [`optimalAdditiveConstant`](KEBallComparator/Solution.lean#L31) |
 
-The [statements](KEBallComparator/Statements.lean) fix the propositions checked by the [Comparator challenge](KEBallComparator/Challenge.lean). The [solution module](KEBallComparator/Solution.lean) provides the corresponding proofs.
+The [statements](KEBallComparator/Statements.lean) fix the propositions checked by the [Comparator challenge](KEBallComparator/Challenge.lean). The [solution module](KEBallComparator/Solution.lean) provides the corresponding proofs. The [manuscript correspondence](docs/manuscript-correspondence.md) maps the two Section 3 propositions to their shared Lean statement.
 
 ## Build
 
@@ -41,5 +41,3 @@ python3 tools/run_comparator.py --verify-receipt verification/receipt.json
 ## License
 
 The original formalization code and repository tools use [Apache-2.0](LICENSE). Third-party material retains its [source attributions and licenses](THIRD_PARTY.md). The rights holders retain their rights in the [manuscript](paper/chen-KE-Ball-Symmetry-2026.tex).
-
-See the [manuscript correspondence](paper/lean-correspondence.md) for the two Section 3 propositions and their shared Lean statement.

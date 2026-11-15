@@ -1,0 +1,12 @@
+Linux chs-check 6.8.0-147-generic #147-Ubuntu SMP PREEMPT_DYNAMIC Thu Sep 24 11:39:52 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+1000
+lockdown,capability,landlock,yama,apparmor
+Lean (version 4.33.1, aarch64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+landrun version 0.1.18
+nanoda_bin 0.4.19
+
+A type checker for the Lean 4 programming language and theorem prover
+
+811cfff51ceaf3d9843708aa6d22e9b84ccac8b4
+d75a2ea960ef2f169d594ee60e4755204d0ff3f3
+running

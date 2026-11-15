@@ -1,6 +1,6 @@
 # Final manuscript and Lean correspondence
 
-The manuscript is [`chen-KE-Ball-Symmetry-2026.tex`](chen-KE-Ball-Symmetry-2026.tex), with SHA-256 `1f8dad706f1513883619f2b4d03c48364b26dbdff7f2ca619097222910469d81`.
+The manuscript is [`chen-KE-Ball-Symmetry-2026.tex`](../paper/chen-KE-Ball-Symmetry-2026.tex), with SHA-256 `1f8dad706f1513883619f2b4d03c48364b26dbdff7f2ca619097222910469d81`.
 
 Section 3 presents the conclusions of [`KEBall.LogarithmicFluxStatement`](../KEBall/Specification.lean#L95) in two propositions. Its proof is used by [`KEBall.Paper20261016.currentPaper`](../KEBall/PaperFormalization20261016.lean#L36).
 
