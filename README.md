@@ -22,7 +22,7 @@ lake exe cache get
 lake build +KEBallComparator.Solution
 ```
 
-The v0.1.1 source release contains **205,287 lines of Lean**. The complete import closure of `KEBallComparator.Solution` contains **1,995,054 lines of Lean**, counting each source file once and including imports from Mathlib, the Lean toolchain, and other dependencies.
+The v0.1.1 source release contains **205,287 lines of Lean**, including **104,392 lines of core formalization source**, **90,056 lines of bundled third-party source**, and **10,839 lines of supporting and verification code**. The complete import closure of `KEBallComparator.Solution` contains **1,995,054 lines of Lean**, counting each source file once and including imports from Mathlib, the Lean toolchain, and other dependencies.
 
 ## Comparator
 
