@@ -1,0 +1,98 @@
+{
+  "schema_version": 2,
+  "paper": "KE_Ball_Symmetry_20261012_v4.tex",
+  "note": "Specifications are propositions, not proofs. Null proof declarations are unresolved obligations and force whole_paper=false.",
+  "required_results": [
+    {
+      "role": "classification",
+      "paper_label": "thm:main",
+      "specification": "KEBall.ClassificationStatement",
+      "proof_declaration": null
+    },
+    {
+      "role": "radial_converse",
+      "paper_label": "thm:main",
+      "specification": "KEBall.RadialExistenceStatement",
+      "proof_declaration": "KEBall.radialExistence"
+    },
+    {
+      "role": "exact_solution_counts",
+      "paper_label": "thm:main",
+      "specification": "KEBall.SolutionCountsStatement",
+      "proof_declaration": null
+    },
+    {
+      "role": "boundary_identities",
+      "paper_label": "lem:boundary",
+      "specification": "KEBall.BoundaryIdentitiesStatement",
+      "proof_declaration": null
+    },
+    {
+      "role": "lower_slope",
+      "paper_label": "lem:lower-slope",
+      "specification": "KEBall.LowerSlopeStatement",
+      "proof_declaration": "KEBall.lowerSlopeStatement"
+    },
+    {
+      "role": "logarithmic_flux",
+      "paper_label": "prop:P",
+      "specification": "KEBall.LogarithmicFluxStatement",
+      "proof_declaration": null
+    },
+    {
+      "role": "normalized_classification",
+      "paper_label": "cor:mean-field",
+      "specification": "KEBall.NormalizedClassificationStatement",
+      "proof_declaration": null
+    },
+    {
+      "role": "d0_determinant_identification",
+      "paper_label": "D0 normalization",
+      "specification": null,
+      "proof_declaration": null
+    }
+  ],
+  "final_semantic_review": {
+    "status": "NOT_RUN",
+    "report": null,
+    "source_sha256": {},
+    "report_sha256": null
+  },
+  "comparator": {
+    "status": "NOT_RUN",
+    "receipt": null,
+    "deployed": false,
+    "required": false
+  },
+  "nanoda": {
+    "status": "NOT_RUN",
+    "receipt": null,
+    "deployed": false,
+    "required": false
+  },
+  "reuse_review": {
+    "status": "NOT_RUN",
+    "report": null,
+    "report_sha256": null,
+    "source_sha256": {},
+    "substantive_upstream_declarations": [
+      "PoincareMT.RiemannianMetric.exists_local_realization",
+      "PoincareMT.LeviCivitaData.bochner_identity",
+      "Poincare.integral_mul_coordinate_divergence"
+    ],
+    "independent_consumers": [
+      {
+        "consumer": "KEBallExamples.row_gradient_piola",
+        "generic_declaration": "KEBall.cofactor_divergence_of_commuting_rows"
+      },
+      {
+        "consumer": "KEBallValidationExamples.normalized_identity_field_green",
+        "generic_declaration": "KEBall.integral_unitBall_divergence_normalized_of_contDiffOn"
+      }
+    ]
+  },
+  "consumer_modules": [
+    "Validation.RowGradientConsumer",
+    "Validation.BallGreenConsumer"
+  ]
+}

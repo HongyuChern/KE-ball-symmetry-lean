@@ -1,0 +1,6 @@
+Copyright (c) 2026 The PoincareLib contributors.
+
+KEBallProbe/ComplexDeterminant.lean adapts the real-matrix Jacobi formula
+proof from PoincareLib/Analysis/Matrix/Determinant.lean to complex matrices
+with differentiation over the real scalars. See Poincare-Conjecture.LICENSE,
+Poincare-Conjecture.NOTICE, and the source revisions in THIRD_PARTY.md.

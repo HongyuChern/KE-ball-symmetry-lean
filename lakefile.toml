@@ -1,0 +1,43 @@
+name = "keBallProbe"
+version = "0.1.0"
+defaultTargets = ["KEBallProbe"]
+
+[[require]]
+name = "poincareConjecture"
+git = "https://github.com/frenzymath/PoincareConjecture"
+rev = "62db01af9388dc1d9b56b66d6674f4c09b2318a2"
+
+[[require]]
+name = "PshLines"
+git = "https://github.com/MingchenXia/pshd-lean"
+rev = "0f659d78f788b34592f4df1d951174ecdc3d88e4"
+
+[[lean_lib]]
+name = "KEBallProbe"
+
+[[lean_lib]]
+name = "KEBall"
+
+[[lean_lib]]
+name = "Drafts"
+globs = ["Drafts.+"]
+
+[[lean_lib]]
+name = "KEBallComparator"
+globs = ["KEBallComparator.+"]
+
+# Selected De Giorgi closure from differential-geometry v0.1.3.
+# Common.lean has scoped imports. Provenance and hashes are in vendor/de_giorgi.
+[[lean_lib]]
+name = "DifferentialGeometry"
+srcDir = "vendor/de_giorgi"
+roots = ["DifferentialGeometry.External.DeGiorgi.ScaledBallEstimates"]
+globs = ["DifferentialGeometry.External.DeGiorgi.+"]
+
+# Unmodified interior Schauder closure; match the upstream elaboration options.
+[[lean_lib]]
+name = "DifferentialGeometryInteriorSchauder"
+srcDir = "vendor/de_giorgi"
+roots = ["DifferentialGeometry.Analysis.Schauder.Elliptic.VariableCoefficient.BallInterior", "DifferentialGeometry.Analysis.Schauder.Holder.LocalDerivativeLimit"]
+globs = ["DifferentialGeometry.Analysis.+", "DifferentialGeometry.Topology.+"]
+moreLeanArgs = ["-DmaxSynthPendingDepth=3", "-DautoImplicit=false"]

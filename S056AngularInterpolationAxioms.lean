@@ -1,0 +1,21 @@
+import KEBall.DirichletAngularGagliardoNirenberg
+import KEBall.DirichletAngularQuarticInterpolation
+import KEBall.DirichletSmoothAngularWordEquation
+
+#print axioms KEBall.hasDerivAt_dirichletSignedPower
+#print axioms KEBall.contDiff_dirichletSignedPower
+#print axioms KEBall.mul_dirichletSignedPower
+#print axioms KEBall.dirichlet_discrete_log_convex_power_interpolation
+#print axioms KEBall.integral_dirichlet_skew_derivative_eq_zero
+#print axioms KEBall.integral_dirichlet_skew_derivative_mul
+#print axioms KEBall.integral_pow_four_le_of_dirichlet_angular_chain
+#print axioms KEBall.integral_dirichlet_angular_derivative_pow_four_le
+#print axioms KEBall.dirichlet_memLp_of_continuousOn
+#print axioms KEBall.dirichlet_integral_three_holder_nonneg
+#print axioms KEBall.integral_dirichlet_angular_power_identity
+#print axioms KEBall.dirichletLpSize_nonneg
+#print axioms KEBall.integral_dirichlet_angular_power_le_abs
+#print axioms KEBall.dirichlet_angular_lp_logconvex
+#print axioms KEBall.dirichlet_angular_lp_logconvex_sup
+#print axioms KEBall.dirichlet_angular_chain_gagliardo_nirenberg
+#print axioms KEBall.closedBall_angularWord_eq_linearized_det_of_contDiff

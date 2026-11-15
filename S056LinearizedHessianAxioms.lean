@@ -1,0 +1,8 @@
+import KEBall.DirichletLinearizedHessianCoercivity
+
+#print axioms KEBall.dirichlet_realHessian_affine
+#print axioms KEBall.dirichlet_complexHessian_affine
+#print axioms KEBall.hasDerivAt_dirichlet_det_affine
+#print axioms KEBall.tendsto_integral_sq_dirichlet_density_slope
+#print axioms KEBall.eventually_dirichlet_affine_elliptic_bounds
+#print axioms KEBall.exists_integral_sq_realHessian_le_linearizedDet

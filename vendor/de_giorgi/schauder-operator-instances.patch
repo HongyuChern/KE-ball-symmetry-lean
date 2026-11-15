@@ -1,0 +1,100 @@
+--- a/DifferentialGeometry/Analysis/Parabolic/Euclidean/Duhamel/Frozen.lean
++++ b/DifferentialGeometry/Analysis/Parabolic/Euclidean/Duhamel/Frozen.lean
+@@ -18,6 +18,16 @@
+ variable {V F : Type*}
+   [NormedAddCommGroup V] [InnerProductSpace ℝ V] [FiniteDimensional ℝ V]
+   [NormedAddCommGroup F] [NormedSpace ℝ F]
++
++-- Local operator-space instances for the pinned Lean 4.33.1 elaborator.
++local instance : NormedAddCommGroup (V →L[ℝ] F) :=
++  ContinuousLinearMap.toNormedAddCommGroup
++local instance : NormedSpace ℝ (V →L[ℝ] F) :=
++  ContinuousLinearMap.toNormedSpace
++local instance : NormedAddCommGroup (V →L[ℝ] V →L[ℝ] F) :=
++  ContinuousLinearMap.toNormedAddCommGroup
++local instance : NormedSpace ℝ (V →L[ℝ] V →L[ℝ] F) :=
++  ContinuousLinearMap.toNormedSpace
+ 
+ def lapEval : (V →L[ℝ] V →L[ℝ] F) →L[ℝ] F :=
+   ∑ i : Fin (Module.finrank ℝ V),
+@@ -124,6 +134,16 @@
+   [MeasurableSpace V] [BorelSpace V]
+   [Nontrivial V]
+   [NormedAddCommGroup F] [NormedSpace ℝ F] [CompleteSpace F]
++
++-- Local operator-space instances for the pinned Lean 4.33.1 elaborator.
++local instance : NormedAddCommGroup (V →L[ℝ] F) :=
++  ContinuousLinearMap.toNormedAddCommGroup
++local instance : NormedSpace ℝ (V →L[ℝ] F) :=
++  ContinuousLinearMap.toNormedSpace
++local instance : NormedAddCommGroup (V →L[ℝ] V →L[ℝ] F) :=
++  ContinuousLinearMap.toNormedAddCommGroup
++local instance : NormedSpace ℝ (V →L[ℝ] V →L[ℝ] F) :=
++  ContinuousLinearMap.toNormedSpace
+ 
+ def heatScaled (t : ℝ) (u : BoundedContinuousFunction V F) (x : V) : F :=
+   ∫ z : V, baseHeat z • u (x - heatScale t • z)
+--- a/DifferentialGeometry/Analysis/Parabolic/Euclidean/HeatPotential/Regularity.lean
++++ b/DifferentialGeometry/Analysis/Parabolic/Euclidean/HeatPotential/Regularity.lean
+@@ -16,6 +16,16 @@
+   [NormedAddCommGroup V] [InnerProductSpace Real V] [FiniteDimensional Real V]
+   [MeasurableSpace V] [BorelSpace V] [Nontrivial V]
+   [NormedAddCommGroup F] [NormedSpace Real F] [CompleteSpace F]
++
++-- Standard operator-space instances, made explicit for Lean 4.33.1.
++local instance : NormedAddCommGroup (V →L[Real] F) :=
++  ContinuousLinearMap.toNormedAddCommGroup
++local instance : NormedSpace Real (V →L[Real] F) :=
++  ContinuousLinearMap.toNormedSpace
++local instance : NormedAddCommGroup (V →L[Real] V →L[Real] F) :=
++  ContinuousLinearMap.toNormedAddCommGroup
++local instance : NormedSpace Real (V →L[Real] V →L[Real] F) :=
++  ContinuousLinearMap.toNormedSpace
+ 
+ def heatD2SmulRightMap (t : Real) (x : V) (f : F) :
+     V →L[Real] (V →L[Real] F) :=
+--- a/DifferentialGeometry/Analysis/Schauder/Holder/Interpolation.lean
++++ b/DifferentialGeometry/Analysis/Schauder/Holder/Interpolation.lean
+@@ -12,6 +12,16 @@
+ 
+ variable {E F : Type*} [NormedAddCommGroup E] [NormedSpace Real E]
+   [NormedAddCommGroup F] [NormedSpace Real F]
++
++-- Standard operator-space instances, made explicit for Lean 4.33.1.
++local instance : NormedAddCommGroup (E →L[Real] F) :=
++  ContinuousLinearMap.toNormedAddCommGroup
++local instance : NormedSpace Real (E →L[Real] F) :=
++  ContinuousLinearMap.toNormedSpace
++local instance : NormedAddCommGroup (E →L[Real] E →L[Real] F) :=
++  ContinuousLinearMap.toNormedAddCommGroup
++local instance : NormedSpace Real (E →L[Real] E →L[Real] F) :=
++  ContinuousLinearMap.toNormedSpace
+ 
+ theorem norm_first_order_taylor_remainder_le_on
+     {f : E → F} {C alpha : NNReal} {s : Set E}
+--- a/DifferentialGeometry/Analysis/Schauder/Holder/Scaling.lean
++++ b/DifferentialGeometry/Analysis/Schauder/Holder/Scaling.lean
+@@ -1159,6 +1159,11 @@
+       (Q.domRestrict (fun p ↦
+         parabolicTimeCenteredSpatialSecondDerivativeRescaleAt
+           tau r p0 d2u p.time p.space)) := by
++  letI : NormedAddCommGroup (V →L[Real] F) := ContinuousLinearMap.toNormedAddCommGroup
++  letI : NormedSpace Real (V →L[Real] F) := ContinuousLinearMap.toNormedSpace
++  letI : NormedAddCommGroup (V →L[Real] V →L[Real] F) :=
++    ContinuousLinearMap.toNormedAddCommGroup
++  letI : NormedSpace Real (V →L[Real] V →L[Real] F) := ContinuousLinearMap.toNormedSpace
+   have hpull := parabolicHolder_timeCenteredDilationAt
+     tau r p0 hmap hu
+   have hscaled := hpull.smul ((r : Real) ^ 2)
+@@ -1246,6 +1251,11 @@
+     ∀ p, p ∈ Q →
+       ‖parabolicTimeCenteredSpatialSecondDerivativeRescaleAt
+         tau r p0 d2u p.time p.space‖ ≤ r ^ 2 * M := by
++  letI : NormedAddCommGroup (V →L[Real] F) := ContinuousLinearMap.toNormedAddCommGroup
++  letI : NormedSpace Real (V →L[Real] F) := ContinuousLinearMap.toNormedSpace
++  letI : NormedAddCommGroup (V →L[Real] V →L[Real] F) :=
++    ContinuousLinearMap.toNormedAddCommGroup
++  letI : NormedSpace Real (V →L[Real] V →L[Real] F) := ContinuousLinearMap.toNormedSpace
+   intro p hp
+   rw [parabolicTimeCenteredSpatialSecondDerivativeRescaleAt_apply,
+     norm_smul, Real.norm_of_nonneg (sq_nonneg (r : Real))]

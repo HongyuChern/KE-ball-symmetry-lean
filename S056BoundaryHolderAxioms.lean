@@ -1,0 +1,40 @@
+import KEBall.DirichletBoundaryHolderGluing
+import KEBall.DirichletBoundaryJetHolder
+import KEBall.DirichletBoundaryJetPower
+import KEBall.DirichletCompactHolder
+import KEBall.DirichletNormalHolderRecovery
+import KEBall.DirichletNormalHolderSplit
+import KEBall.DirichletRotationClosedBallHolder
+import KEBall.DirichletRotationGlobalScale
+import KEBall.DirichletTangentHolder
+import KEBall.DirichletUnitaryFieldMatrix
+
+#print axioms KEBall.exists_dirichlet_closedBall_holder_of_boundary_power
+#print axioms KEBall.exists_dirichlet_closedBall_holder_extended_jet
+#print axioms KEBall.norm_dirichlet_extended_jet_sub_nearest_le
+#print axioms KEBall.norm_dirichlet_normal_jet_sub_le_of_holder_trace
+#print axioms KEBall.HasDirichletHolderOn
+#print axioms KEBall.HasDirichletHolderOn.mono
+#print axioms KEBall.HasDirichletHolderOn.congr
+#print axioms KEBall.HasDirichletHolderOn.continuousOn
+#print axioms KEBall.HasDirichletHolderOn.prodMk
+#print axioms KEBall.HasDirichletHolderOn.comp_contDiffOn
+#print axioms KEBall.HasDirichletHolderOn.comp_smooth
+#print axioms KEBall.HasDirichletHolderOn.clm
+#print axioms KEBall.HasDirichletHolderOn.add
+#print axioms KEBall.HasDirichletHolderOn.sub
+#print axioms KEBall.HasDirichletHolderOn.smul
+#print axioms KEBall.HasDirichletHolderOn.clm_comp
+#print axioms KEBall.HasDirichletHolderOn.clm_apply
+#print axioms KEBall.HasDirichletHolderOn.pi
+#print axioms KEBall.HasDirichletHolderOn.sum
+#print axioms KEBall.HasDirichletHolderOn.const
+#print axioms KEBall.HasDirichletHolderOn.inv
+#print axioms KEBall.hasDirichletHolderOn_of_contDiffOn
+#print axioms KEBall.hasDirichletHolderOn_realHessian_of_tangent_det
+#print axioms KEBall.exists_dirichlet_holder_realHessian_tangent_split
+#print axioms KEBall.exists_dirichlet_rotation_closedBall_holder_firstJet
+#print axioms KEBall.exists_dirichlet_rotation_derivative_interior_scale_holder
+#print axioms KEBall.hasDirichletHolderOn_tangentHessian_of_unitaryRotations
+#print axioms KEBall.exists_dirichlet_skewHermitian_matrix_of_field
+#print axioms KEBall.inner_dirichlet_skew_field_self

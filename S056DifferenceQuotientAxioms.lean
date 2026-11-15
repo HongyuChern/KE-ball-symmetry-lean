@@ -1,0 +1,50 @@
+import KEBall.DirichletAveragedCofactor
+import KEBall.DirichletAveragedCofactorBounds
+import KEBall.DirichletDifferenceQuotientEquation
+import KEBall.DirichletCompactCofactorFamily
+import KEBall.DirichletSchauderUniformConstants
+import KEBall.DirichletSchauderEstimateMajorant
+import KEBall.DirichletSchauderUniformFamily
+
+#print axioms KEBall.dirichletMeanCofactor
+#print axioms KEBall.continuous_dirichlet_cofactor_segment
+#print axioms KEBall.dirichlet_det_sub_eq_integral_cofactor
+#print axioms KEBall.dirichletBilinearContraction_meanCofactor
+#print axioms KEBall.dirichlet_matrix_segment_posDef
+#print axioms KEBall.inner_dirichletMeanCofactor
+#print axioms KEBall.dirichletMeanCofactor_pos
+#print axioms KEBall.dirichletMeanCofactor_symmetric
+#print axioms KEBall.norm_dirichlet_affine_segment_le
+#print axioms KEBall.norm_dirichlet_affine_segment_sub_le
+#print axioms KEBall.dirichletMeanCofactor_same
+#print axioms KEBall.norm_dirichletMeanCofactor_le
+#print axioms KEBall.norm_dirichletMeanCofactor_sub_le
+#print axioms KEBall.norm_dirichletMeanCofactor_sub_le_of_lipschitz
+#print axioms KEBall.holderOnWith_dirichletMeanCofactor
+#print axioms KEBall.dirichletMeanCofactor_coercive
+#print axioms KEBall.dirichlet_realHessian_comp_add_right
+#print axioms KEBall.contDiffAt_dirichletDifferenceQuotient
+#print axioms KEBall.realHessian_dirichletDifferenceQuotient
+#print axioms KEBall.dirichletBilinearContraction_smul_right
+#print axioms KEBall.dirichlet_difference_quotient_det_linearization
+#print axioms KEBall.dirichlet_difference_quotient_determinant_equation
+#print axioms KEBall.lipschitzOnWith_dirichletMeanCofactor_pair
+#print axioms KEBall.continuous_dirichletMeanCofactor_pair
+#print axioms KEBall.exists_uniform_ellipticity_of_continuous_compact_operator_family
+#print axioms KEBall.exists_uniform_dirichletMeanCofactor_bounds_on_compact
+#print axioms KEBall.dirichletSchauderMatrix_toEuclidean_quadratic
+#print axioms KEBall.norm_dirichletSchauderSqrt_le
+#print axioms KEBall.norm_dirichletSchauderSqrt_symm_le
+#print axioms KEBall.dirichlet_heatDuhamelConstSchauderConst_mono
+#print axioms KEBall.dirichletSchauderChangeConst
+#print axioms KEBall.dirichletSchauderChangeConst_mono
+#print axioms KEBall.dirichletSchauderDefectMajorant
+#print axioms KEBall.dirichletSchauderDefectConst_le_majorant
+#print axioms KEBall.dirichletSchauderDefectMajorant_smul
+#print axioms KEBall.exists_dirichlet_uniform_schauder_absorption_scale
+#print axioms KEBall.dirichlet_heatSupSchauderConst_mono
+#print axioms KEBall.dirichlet_heatSupSchauderConst_le_const
+#print axioms KEBall.dirichletSchauderEstimateMajorant
+#print axioms KEBall.dirichletSchauderConst_le_majorant
+#print axioms KEBall.exists_dirichlet_normalized_coefficients_at_scale
+#print axioms KEBall.exists_dirichlet_uniform_normalized_schauder_family

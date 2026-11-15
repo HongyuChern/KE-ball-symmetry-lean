@@ -1,0 +1,8 @@
+import KEBall.DirichletLinearDifferenceSchauder
+import KEBall.DirichletLinearC3Holder
+import KEBall.DirichletLocalLinearC3Holder
+
+#print axioms KEBall.exists_dirichlet_uniform_linear_quotient_schauder_bound
+#print axioms KEBall.exists_dirichlet_linear_holder_directional_third_jet
+#print axioms KEBall.exists_dirichlet_local_C3_holder_of_linear_elliptic_jets
+#print axioms KEBall.exists_dirichlet_local_C3_holder_of_linear_elliptic_equation

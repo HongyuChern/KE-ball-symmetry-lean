@@ -1,0 +1,26 @@
+import KEBall.DirichletClosedBallEllipticity
+import KEBall.DirichletSchauderPositiveMatrix
+import KEBall.DirichletSchauderCoefficientExtension
+import KEBall.DirichletSchauderAbsorptionScale
+
+#print axioms KEBall.dirichlet_adjugate_posDef
+#print axioms KEBall.dirichletCofactorOfMatrix_pos
+#print axioms KEBall.exists_uniform_ellipticity_of_continuous_closedBall_operator
+#print axioms KEBall.continuousOn_dirichletWithinComplexHessian_of_C2
+#print axioms KEBall.exists_dirichlet_closedBall_cofactor_ellipticity_of_C2
+#print axioms KEBall.dirichletSchauderMatrix_eq_toMatrix
+#print axioms KEBall.dirichletSchauderMatrix_quadratic
+#print axioms KEBall.dirichletSchauderMatrix_isHermitian
+#print axioms KEBall.dirichletSchauderMatrix_posDef
+#print axioms KEBall.dirichletSchauderMatrix_posDef_of_coercive
+#print axioms KEBall.dirichlet_scaled_ballRetraction_mem
+#print axioms KEBall.lipschitzWith_dirichlet_scaled_ballRetraction
+#print axioms KEBall.exists_dirichlet_scaled_holder_coefficient_extension
+#print axioms KEBall.lipschitzWith_dirichletSchauderMatrix_entry
+#print axioms KEBall.holderOnWith_dirichletSchauderMatrix_entry
+#print axioms KEBall.abs_dirichletSchauderMatrix_le
+#print axioms KEBall.exists_dirichlet_schauder_absorption_scale
+#print axioms DifferentialGeometry.Analysis.Calculus.ballRetraction
+#print axioms DifferentialGeometry.Analysis.Calculus.ballRetraction_mem_closedBall
+#print axioms DifferentialGeometry.Analysis.Calculus.ballRetraction_eq_self_of_mem
+#print axioms DifferentialGeometry.Analysis.Calculus.lipschitzWith_one_ballRetraction

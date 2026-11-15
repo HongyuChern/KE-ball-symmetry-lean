@@ -1,0 +1,16 @@
+{
+  "challenge_module": "KEBallComparator.Challenge",
+  "solution_module": "KEBallComparator.Solution",
+  "theorem_names": [
+    "KEBallComparator.Targets.smoothPaper",
+    "KEBallComparator.Targets.positiveRoots",
+    "KEBallComparator.Targets.smoothCompatibility",
+    "KEBallComparator.Targets.subcriticalAttainment",
+    "KEBallComparator.Targets.criticalInequality",
+    "KEBallComparator.Targets.optimalEnergyCoefficient",
+    "KEBallComparator.Targets.optimalAdditiveConstant"
+  ],
+  "definition_names": [],
+  "permitted_axioms": ["propext", "Classical.choice", "Quot.sound"],
+  "enable_nanoda": true
+}

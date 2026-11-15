@@ -1,0 +1,34 @@
+{
+  "origin": "https://github.com/qinz1yang/differential-geometry",
+  "tag": "v0.1.3",
+  "commit": "7a48598d35109aa99d1cc678e2724c213cdf4ff3",
+  "source_path": "DifferentialGeometry/Analysis/Sobolev/GagliardoNirenberg/FiberNorm/DiscreteLogConvexity.lean",
+  "source_sha256": "4e5c7a38dc238fa86a9168a53a2f9857f153158118163563e3123b23fa1d0e56",
+  "target_path": "KEBall/DirichletInterpolationDiscrete.lean",
+  "target_sha256": "b8c53803896093818fbbf3883f64f747ca95e7c2f5e886e13a596b0b7c311be4",
+  "license": "Apache-2.0",
+  "adaptation": "Retain only LpDiscreteLogConvex section, remove manifold imports and unused variables, rename public theorem; proof bodies otherwise unchanged.",
+  "proofs_verified_here": true,
+  "dependency_pins_changed": false,
+  "created_at_utc": "2026-11-13T17:38:14.060590+00:00",
+  "additional_adapted_sources": [
+    {
+      "source_path": "DifferentialGeometry/Analysis/Sobolev/GagliardoNirenberg/FiberNorm/HolderIntegrability.lean",
+      "source_sha256": "bf3e429d9d7da4fa34dc650fda4aed2acd0bacf6a9a3472c57bfad8b2cacdd92",
+      "target_path": "KEBall/DirichletHolderThree.lean",
+      "target_sha256": "61d3699d5d4a85892e25e384efedc654c5aba36f927982b3cdaebfd2d56bffa7",
+      "adaptation": "General real three-factor Holder proof specialized to normalized ball measure; ContinuousOn and compact bounds replace manifold compact-support MemLp arguments. No boundaryless-manifold theorem invoked.",
+      "verified_here": true,
+      "production_build": "evidence/holder-three-direct-01.json",
+      "axiom_audit": "evidence/angular-interpolation-axioms-01.log"
+    }
+  ],
+  "production_build": "evidence/interpolation-discrete-direct-01.json",
+  "axiom_audit": "evidence/angular-interpolation-axioms-01.log",
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "verified_at_utc": "2026-11-13T19:05:02.441393+00:00"
+}

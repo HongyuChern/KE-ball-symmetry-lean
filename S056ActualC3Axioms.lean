@@ -1,0 +1,8 @@
+import KEBall.DirichletLogDensityInteriorC3
+
+#print axioms KEBall.dirichlet_C3At_of_positive_determinant_C2_holder_jets
+#print axioms KEBall.exists_dirichlet_C1_holder_jet_extension
+#print axioms KEBall.exists_dirichlet_C1_holder_extension_of_C2
+#print axioms KEBall.dirichlet_C3At_of_local_positive_determinant_and_holder_hessian
+#print axioms KEBall.contDiffOn_three_of_dirichlet_hessian_oscillation_and_determinant
+#print axioms KEBall.exists_dirichlet_closedBall_C2_interior_C3_limit_of_logDensityPath

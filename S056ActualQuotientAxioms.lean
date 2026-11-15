@@ -1,0 +1,5 @@
+import KEBall.DirichletDifferenceQuotientSchauder
+
+#print axioms KEBall.dirichlet_scaled_quotient_nnnorm_le
+#print axioms KEBall.holderWith_dirichlet_scaled_quotient_of_holder_derivative
+#print axioms KEBall.exists_dirichlet_uniform_normalized_quotient_schauder_bound

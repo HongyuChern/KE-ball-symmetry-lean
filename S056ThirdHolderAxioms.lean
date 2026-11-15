@@ -1,0 +1,12 @@
+import KEBall.DirichletLocalNonlinearC3Holder
+
+#print axioms KEBall.dirichlet_affine_inverse_maps_ball
+#print axioms KEBall.lipschitzWith_dirichlet_affine_inverse
+#print axioms KEBall.dirichlet_C1_holder_of_affine_normalization
+#print axioms KEBall.dirichlet_C1_holder_normalized_directional_hessian_of_schauder_bound
+#print axioms KEBall.exists_dirichlet_local_holder_directional_third_jet
+#print axioms KEBall.dirichlet_exists_holderOnWith_clm_of_basis
+#print axioms KEBall.dirichlet_contDiffOn_clm_of_basis
+#print axioms KEBall.exists_dirichlet_local_C1_holder_clm_of_directions
+#print axioms KEBall.exists_dirichlet_local_C3_holder_of_positive_determinant_jets
+#print axioms KEBall.exists_dirichlet_local_C3_holder_of_positive_determinant

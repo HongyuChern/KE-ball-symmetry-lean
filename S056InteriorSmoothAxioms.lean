@@ -1,0 +1,47 @@
+import KEBall.DirichletLocalHolder
+import KEBall.DirichletLocalHolderAssembly
+import KEBall.DirichletC3DifferentiatedEquation
+import KEBall.DirichletLocalHolderLinearGain
+import KEBall.DirichletLinearHolderBootstrap
+import KEBall.DirichletNonlinearHolderGain
+import KEBall.DirichletNonlinearHolderBootstrap
+import KEBall.DirichletOscillationInteriorSmooth
+import KEBall.DirichletLogDensityInteriorSmooth
+
+#print axioms KEBall.HasDirichletHolderAt
+#print axioms KEBall.dirichlet_holderOn_iterated_succ_iff
+#print axioms KEBall.dirichlet_holderOn_iterated_zero_iff
+#print axioms KEBall.dirichlet_holderOn_iterated_one_iff
+#print axioms KEBall.dirichlet_holderOn_iterated_two_iff
+#print axioms KEBall.dirichlet_holderOn_iterated_three_iff
+#print axioms KEBall.HasDirichletHolderAt.contDiffAt
+#print axioms KEBall.HasDirichletHolderAt.derivative
+#print axioms KEBall.HasDirichletHolderAt.of_order_le
+#print axioms KEBall.HasDirichletHolderAt.of_fderiv
+#print axioms KEBall.HasDirichletHolderAt.prodMk
+#print axioms KEBall.HasDirichletHolderAt.comp_smooth
+#print axioms KEBall.HasDirichletHolderAt.clm
+#print axioms KEBall.HasDirichletHolderAt.sub
+#print axioms KEBall.exists_dirichlet_holder_iterated_clm_of_basis
+#print axioms KEBall.hasDirichletHolderAt_clm_of_basis
+#print axioms KEBall.HasDirichletHolderAt.eventually
+#print axioms KEBall.HasDirichletHolderAt.bilinear
+#print axioms KEBall.HasDirichletHolderAt.of_directions
+#print axioms KEBall.HasDirichletHolderAt.congr_of_eventuallyEq
+#print axioms KEBall.hasDirichletHolderAt_of_contDiffAt_succ
+#print axioms KEBall.dirichlet_hessian_directionalDerivative_of_C3
+#print axioms KEBall.dirichlet_linear_directional_equation_of_C3
+#print axioms KEBall.dirichlet_cofactor_directional_equation_of_C3
+#print axioms KEBall.hasDirichletHolderAt_three_of_linear_elliptic_equation
+#print axioms KEBall.hasDirichletHolderAt_of_linear_elliptic_equation
+#print axioms KEBall.hasDirichletHolderAt_three_of_positive_determinant
+#print axioms KEBall.hasDirichletHolderAt_cofactor_of_hessian
+#print axioms KEBall.exists_dirichlet_point_cofactor_ellipticity
+#print axioms KEBall.hasDirichletHolderAt_all_of_positive_determinant
+#print axioms KEBall.contDiffAt_infty_of_positive_determinant_and_holder_source
+#print axioms KEBall.contDiffAt_infty_of_positive_determinant_smooth_density
+#print axioms KEBall.contDiffAt_infty_of_positive_determinant_exponential
+#print axioms KEBall.exists_dirichlet_holderAt_two_of_hessian_oscillation
+#print axioms KEBall.contDiffOn_infty_of_dirichlet_hessian_oscillation_and_determinant
+#print axioms KEBall.contDiffOn_infty_of_dirichlet_hessian_oscillation_and_exponential
+#print axioms KEBall.exists_dirichlet_closedBall_C2_interior_smooth_limit_of_logDensityPath

@@ -1,0 +1,16 @@
+import KEBall.DirichletBoundedBilinear
+import KEBall.DirichletLinearDifferenceSource
+
+#print axioms KEBall.dirichlet_holderWith_bilinear
+#print axioms KEBall.nnnorm_dirichlet_bilinearBoundedContinuousFunction_le
+#print axioms KEBall.dirichletContractionRightLinearMap
+#print axioms KEBall.dirichletContractionCLM
+#print axioms KEBall.dirichletContractionCLM_apply
+#print axioms KEBall.dirichletBoundedTranslate
+#print axioms KEBall.dirichletBoundedTranslate_apply
+#print axioms KEBall.nnnorm_dirichletBoundedTranslate_le
+#print axioms KEBall.holderWith_dirichletBoundedTranslate
+#print axioms KEBall.dirichletLinearDifferenceSource
+#print axioms KEBall.dirichletLinearDifferenceSource_apply
+#print axioms KEBall.dirichlet_linear_difference_equation
+#print axioms KEBall.exists_dirichlet_uniform_linear_difference_source_bounds

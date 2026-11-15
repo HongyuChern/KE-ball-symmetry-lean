@@ -1,0 +1,6 @@
+import KEBall.DirichletSchauderDifferenceLimit
+
+#print axioms KEBall.dirichlet_contDiffAt_clm_apply
+#print axioms KEBall.exists_dirichlet_admissible_quotient_sequence
+#print axioms KEBall.tendstoUniformly_dirichlet_scaled_quotient
+#print axioms KEBall.dirichlet_C1_directional_hessian_of_normalized_schauder_bound

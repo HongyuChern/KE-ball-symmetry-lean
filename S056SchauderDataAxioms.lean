@@ -1,0 +1,11 @@
+import KEBall.DirichletSchauderNormalizedCoefficients
+import KEBall.DirichletLogDensityClosedBallData
+import KEBall.DirichletDifferenceQuotientHolder
+
+#print axioms KEBall.exists_dirichlet_normalized_schauder_coefficients
+#print axioms KEBall.exists_dirichlet_closedBall_C2_elliptic_limit_of_logDensityPath
+#print axioms KEBall.dirichlet_holderOnWith_of_norm_sub_le
+#print axioms KEBall.dirichletDifferenceQuotient
+#print axioms KEBall.hasFDerivAt_dirichletDifferenceQuotient
+#print axioms KEBall.norm_dirichletDifferenceQuotient_le_of_derivative_bound
+#print axioms KEBall.norm_dirichletDifferenceQuotient_sub_le_of_holder_derivative

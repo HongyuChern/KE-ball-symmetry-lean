@@ -1,0 +1,20 @@
+{
+  "Validation/RowGradientConsumer.lean": {
+    "copied_exactly_from": "scratch/cofactor/RowGradientConsumer.lean",
+    "sha256": "0abe6e7543d26fc7e75d1d6d41a1cc59304c5512b8d5639a7d8d3dd0f57354fd",
+    "author": "/root/cofactor",
+    "semantic_reviewer": "/root/runtime_restore",
+    "actual_lean_exit_code": 0,
+    "compilation_log": "logs/consumer-check-20261012T143655Z-a4b144/RowGradientConsumer.log"
+  },
+  "Validation/BallGreenConsumer.lean": {
+    "author": "/root/runtime_restore",
+    "independent_semantic_reviewer": "/root",
+    "sha256": "9a0fa5edde9dc6dd4179c798c1edfbc981abc35edd4e35174d3679924ba0d6a5",
+    "actual_lean_exit_code": 0,
+    "compilation_log": "logs/consumer-check-20261012T143804Z-7dbaf1/BallGreenConsumer.log",
+    "independent_semantic_review": "PASS",
+    "review_report": "reviews/code_audit_20261012T145200Z_ball_green_consumer_by_root.md",
+    "review_report_sha256": "7e959adbcae3481e661d671f79b1d8f071f983cd1a252643475a4534fdad8ff2"
+  }
+}

@@ -1,0 +1,18 @@
+import KEBall.DirichletHessianCoreHolder
+import KEBall.DirichletRadialPullbackJetContinuity
+
+#print axioms KEBall.dirichlet_core_holder_bound_of_scaled
+#print axioms KEBall.exists_dirichlet_realHessian_core_holder_of_oscillation
+#print axioms KEBall.fderiv_dirichlet_comp_closedBall
+#print axioms KEBall.realHessian_dirichlet_comp_closedBall
+#print axioms KEBall.dirichlet_closedBall_secondJet_sphere_pullback_zero
+#print axioms KEBall.smoothNear_dirichlet_inward_dilation
+#print axioms KEBall.dirichlet_uniform_limit_at_one_of_continuousOn_compact
+#print axioms KEBall.tendstoUniformlyOn_dirichlet_weighted_dilation
+#print axioms KEBall.fderiv_dirichlet_inward_dilation
+#print axioms KEBall.realHessian_dirichlet_inward_dilation
+#print axioms KEBall.tendstoUniformlyOn_dirichlet_inward_firstJet
+#print axioms KEBall.tendstoUniformlyOn_dirichlet_inward_secondJet
+#print axioms KEBall.continuousOn_dirichlet_sphere_pullback_firstJet
+#print axioms KEBall.continuousOn_dirichlet_sphere_pullback_secondJet
+#print axioms KEBall.tendstoUniformlyOn_dirichlet_sphere_pullback_jets_zero

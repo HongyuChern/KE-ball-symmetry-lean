@@ -1,0 +1,17 @@
+import KEBall.DirichletZeroBoundaryApproximation
+
+#print axioms KEBall.fderiv_dirichlet_parameter_slice
+#print axioms KEBall.realHessian_dirichlet_parameter_slice
+#print axioms KEBall.continuousOn_dirichlet_parameter_spatial_jets
+#print axioms KEBall.dirichletBoundaryCorrection
+#print axioms KEBall.dirichletBoundaryCorrection_eq_zero_near_origin
+#print axioms KEBall.contDiffOn_dirichletBoundaryCorrection_parameter
+#print axioms KEBall.contDiff_dirichletBoundaryCorrection
+#print axioms KEBall.dirichletBoundaryCorrection_eq_inward_on_sphere
+#print axioms KEBall.dirichletBoundaryCorrection_one_eq_zero
+#print axioms KEBall.tendstoUniformlyOn_dirichletBoundaryCorrection_jets_zero
+#print axioms KEBall.dirichletZeroBoundaryApprox
+#print axioms KEBall.smoothNear_dirichletZeroBoundaryApprox
+#print axioms KEBall.dirichletZeroBoundaryApprox_zero_on_sphere
+#print axioms KEBall.tendstoUniformlyOn_dirichletZeroBoundaryApprox_jets
+#print axioms KEBall.exists_dirichlet_zeroBoundary_smooth_C2_approximation

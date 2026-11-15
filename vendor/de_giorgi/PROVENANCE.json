@@ -1,0 +1,847 @@
+{
+  "repository": "https://github.com/qinz1yang/differential-geometry",
+  "tag": "v0.1.3",
+  "commit": "7a48598d35109aa99d1cc678e2724c213cdf4ff3",
+  "tag_resolution": "git ls-remote exact tag; lightweight tag output recorded",
+  "archive_url": "https://codeload.github.com/qinz1yang/differential-geometry/tar.gz/refs/tags/v0.1.3",
+  "archive_sha256": "bd20540b56c423e13ffef14d379a54ec9b62da74c7ab4679b608b8918aca8eaf",
+  "roots": [
+    "DifferentialGeometry.External.DeGiorgi.ScaledBallEstimates",
+    "DifferentialGeometry.External.DeGiorgi.SobolevSpace.PositiveTestDensity"
+  ],
+  "lean_source_modifications": true,
+  "files": {
+    "DifferentialGeometry.External.DeGiorgi.SobolevSpace.PositiveTestDensity": {
+      "path": "DifferentialGeometry/External/DeGiorgi/SobolevSpace/PositiveTestDensity.lean",
+      "sha256": "75c5d6af035af6968b3348fc6920dd583b4810beae0f77c3a03fe3e67308be41",
+      "bytes": 32485,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.PositivePart",
+        "DifferentialGeometry.External.DeGiorgi.WeakFormulation.CoefficientOperator"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.WeakFormulation.CoefficientOperator": {
+      "path": "DifferentialGeometry/External/DeGiorgi/WeakFormulation/CoefficientOperator.lean",
+      "sha256": "fb2026ef76c31be3182158cb7ebf898095182a12ac451d359a8a547a2c678292",
+      "bytes": 16908,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.WeakFormulation.SmoothTests",
+        "Mathlib.Analysis.InnerProductSpace.LaxMilgram"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.WeakFormulation.SmoothTests": {
+      "path": "DifferentialGeometry/External/DeGiorgi/WeakFormulation/SmoothTests.lean",
+      "sha256": "042dac11cd87e78543b9aaf219316dd297770e53f7709a77629b4e28d110e368",
+      "bytes": 13101,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.WeakFormulation.SolutionInterfaces"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.WeakFormulation.SolutionInterfaces": {
+      "path": "DifferentialGeometry/External/DeGiorgi/WeakFormulation/SolutionInterfaces.lean",
+      "sha256": "42d04fc27c20143d93365b261faf01cd55aafd84db223d585fee43734167f1e4",
+      "bytes": 4096,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.WeakFormulation.BilinearForm"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.WeakFormulation.BilinearForm": {
+      "path": "DifferentialGeometry/External/DeGiorgi/WeakFormulation/BilinearForm.lean",
+      "sha256": "98b1ea0270a570bfe9dd4bb20840ce768fd7ba1b73382ad0a49a0484c3d41696",
+      "bytes": 28391,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.SobolevSpace",
+        "DifferentialGeometry.External.DeGiorgi.Poincare",
+        "DifferentialGeometry.External.DeGiorgi.EllipticCoefficients"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.EllipticCoefficients": {
+      "path": "DifferentialGeometry/External/DeGiorgi/EllipticCoefficients.lean",
+      "sha256": "5319119fb4b30ba4680872e60907ad1d0571392e8879c5a11631b528a4a46331",
+      "bytes": 10416,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.Foundations"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.Foundations": {
+      "path": "DifferentialGeometry/External/DeGiorgi/Foundations.lean",
+      "sha256": "013daa6bb0fb93c4fedc874e9dab8868324732926a62be9b5e37f7bd3455d24c",
+      "bytes": 461,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.Common"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.Common": {
+      "path": "DifferentialGeometry/External/DeGiorgi/Common.lean",
+      "sha256": "82f70971c573e42189e19dd37147fc3781ad13f2b31e9ca43553b07a4ad5e869",
+      "bytes": 463,
+      "imports": [
+        "Mathlib"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.Poincare": {
+      "path": "DifferentialGeometry/External/DeGiorgi/Poincare.lean",
+      "sha256": "27cc091649748bf5fa99fe49d7bc853db5d9f59d0ad8635387aa554b4665c817",
+      "bytes": 91829,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.Common",
+        "DifferentialGeometry.External.DeGiorgi.WholeSpaceSobolev"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.WholeSpaceSobolev": {
+      "path": "DifferentialGeometry/External/DeGiorgi/WholeSpaceSobolev.lean",
+      "sha256": "7d2037b506aa09d94f84ea59e7e9444ca7f753458b074bcff364c0ea24709cfc",
+      "bytes": 21300,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.Common"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.SobolevSpace": {
+      "path": "DifferentialGeometry/External/DeGiorgi/SobolevSpace.lean",
+      "sha256": "6e8d2e02ca8b19f671a43047d7be4affa24c4c3d65c3687036a5a87fe814cb26",
+      "bytes": 500,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.SobolevSpace.WeakDerivatives",
+        "DifferentialGeometry.External.DeGiorgi.SobolevSpace.Witnesses",
+        "DifferentialGeometry.External.DeGiorgi.SobolevSpace.Approximation",
+        "DifferentialGeometry.External.DeGiorgi.SobolevSpace.PositivePartPrelude"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.SobolevSpace.PositivePartPrelude": {
+      "path": "DifferentialGeometry/External/DeGiorgi/SobolevSpace/PositivePartPrelude.lean",
+      "sha256": "18ab9ef29d240550d48e774606aa0ae7bd234f871638f4f6dc308f3c9d691549",
+      "bytes": 2207,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.SobolevSpace.Approximation"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.SobolevSpace.Approximation": {
+      "path": "DifferentialGeometry/External/DeGiorgi/SobolevSpace/Approximation.lean",
+      "sha256": "3324f00cd8e33344b709c061aa1edef101243ce8e069517dabb63d737cca76dc",
+      "bytes": 73939,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.SobolevSpace.Witnesses"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.SobolevSpace.Witnesses": {
+      "path": "DifferentialGeometry/External/DeGiorgi/SobolevSpace/Witnesses.lean",
+      "sha256": "9279154b519c99d42b8e48c0edc6666159c490bb0d5f05f89081e23ee235b8bb",
+      "bytes": 25721,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.SobolevSpace.WeakDerivatives"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.SobolevSpace.WeakDerivatives": {
+      "path": "DifferentialGeometry/External/DeGiorgi/SobolevSpace/WeakDerivatives.lean",
+      "sha256": "347199db2712add9f3bd5c4e5e954f40957f1b6de58209c69598e9b17d19692b",
+      "bytes": 19850,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.Foundations",
+        "DifferentialGeometry.External.DeGiorgi.WholeSpaceSobolev",
+        "Mathlib.Analysis.Calculus.BumpFunction.Convolution",
+        "Mathlib.Analysis.Calculus.BumpFunction.Normed",
+        "Mathlib.Analysis.Calculus.ContDiff.Convolution",
+        "Mathlib.Analysis.Convex.Integral",
+        "Mathlib.Analysis.Normed.Lp.SmoothApprox",
+        "Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.PositivePart": {
+      "path": "DifferentialGeometry/External/DeGiorgi/PositivePart.lean",
+      "sha256": "c8b2729cf59303e87dc65d04314ce311d537bcaec9125436b70d91a85db4d574",
+      "bytes": 41709,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.SobolevSpace",
+        "DifferentialGeometry.External.DeGiorgi.StampacchiaTruncation"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.StampacchiaTruncation": {
+      "path": "DifferentialGeometry/External/DeGiorgi/StampacchiaTruncation.lean",
+      "sha256": "33e36075332febf8a853b329ed38330d15b92c0661aeb297456fbe417178dfd5",
+      "bytes": 46904,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.Common",
+        "DifferentialGeometry.External.DeGiorgi.SobolevChainRule"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.SobolevChainRule": {
+      "path": "DifferentialGeometry/External/DeGiorgi/SobolevChainRule.lean",
+      "sha256": "2ec43e130cbdcef5e5a9212b7300e90efe7b42e393330a6daae6c86f40af23f5",
+      "bytes": 51154,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.UnitBallApproximation",
+        "Mathlib.Geometry.Manifold.PartitionOfUnity"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.UnitBallApproximation": {
+      "path": "DifferentialGeometry/External/DeGiorgi/UnitBallApproximation.lean",
+      "sha256": "0b10ba991a2c762f319dd7b170245c6acd18d7062bec8b72c5888ec431eb268d",
+      "bytes": 466,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.UnitBallApproximationCore"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.UnitBallApproximationCore": {
+      "path": "DifferentialGeometry/External/DeGiorgi/UnitBallApproximationCore.lean",
+      "sha256": "8084b8893698183ce2a6bd7203843238710c8154281229948e3f6d716667bfcd",
+      "bytes": 515,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.UnitBallApproximationCore.Profiles",
+        "DifferentialGeometry.External.DeGiorgi.UnitBallApproximationCore.Rescaling",
+        "DifferentialGeometry.External.DeGiorgi.UnitBallApproximationCore.Dilation",
+        "DifferentialGeometry.External.DeGiorgi.UnitBallApproximationCore.Approximation"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.UnitBallApproximationCore.Approximation": {
+      "path": "DifferentialGeometry/External/DeGiorgi/UnitBallApproximationCore/Approximation.lean",
+      "sha256": "bd0c3b2a3d51263229840c640a561ad0bb5211b16e3b1468334a55d3ae6ceb4e",
+      "bytes": 64190,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.UnitBallApproximationCore.Dilation"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.UnitBallApproximationCore.Dilation": {
+      "path": "DifferentialGeometry/External/DeGiorgi/UnitBallApproximationCore/Dilation.lean",
+      "sha256": "4d93e6bc184a2c3d6286caef87e599d1ace010f94fdef0b16f318ffd707f6097",
+      "bytes": 11629,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.UnitBallApproximationCore.Rescaling"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.UnitBallApproximationCore.Rescaling": {
+      "path": "DifferentialGeometry/External/DeGiorgi/UnitBallApproximationCore/Rescaling.lean",
+      "sha256": "37f071db9bb2a7e863cdc90536ad2e335b85c15db234d3c9c8ec052b4518fd21",
+      "bytes": 11259,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.UnitBallApproximationCore.Profiles"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.UnitBallApproximationCore.Profiles": {
+      "path": "DifferentialGeometry/External/DeGiorgi/UnitBallApproximationCore/Profiles.lean",
+      "sha256": "a43ea47fe6bfb57380f25d177598109f189f17230a655cb66c47c0545a7f1b3f",
+      "bytes": 10121,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.SobolevSpace",
+        "Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.ScaledBallEstimates": {
+      "path": "DifferentialGeometry/External/DeGiorgi/ScaledBallEstimates.lean",
+      "sha256": "327ec1504b15b9bee3ad9563528be4a743e3b2413342dad866a533593280a026",
+      "bytes": 16684,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.BallScaling",
+        "DifferentialGeometry.External.DeGiorgi.Localization",
+        "DifferentialGeometry.External.DeGiorgi.WeakHarnack"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.WeakHarnack": {
+      "path": "DifferentialGeometry/External/DeGiorgi/WeakHarnack.lean",
+      "sha256": "f50058102fb6a68ecef88cc4cc8d950643f1ae66ff69299850da86858b1db293",
+      "bytes": 93267,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.Supersolutions",
+        "DifferentialGeometry.External.DeGiorgi.Crossover",
+        "DifferentialGeometry.External.DeGiorgi.Support.MeasureBounds"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.Support.MeasureBounds": {
+      "path": "DifferentialGeometry/External/DeGiorgi/Support/MeasureBounds.lean",
+      "sha256": "2913430fba55c09ee96486d1f931149f23187c5679bb6f561be991d1521be943",
+      "bytes": 7800,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.EllipticCoefficients"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.Crossover": {
+      "path": "DifferentialGeometry/External/DeGiorgi/Crossover.lean",
+      "sha256": "5ba927f4e798db64a827658f26bc5358292c2ecb10dba67f4b37a3f6b9dbcf41",
+      "bytes": 237,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.Crossover.PublicEstimate"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.Crossover.PublicEstimate": {
+      "path": "DifferentialGeometry/External/DeGiorgi/Crossover/PublicEstimate.lean",
+      "sha256": "692d9c1f4a4dba7896824831ae5b561a935d072fdc2c9b078ab2b494dc8757aa",
+      "bytes": 8800,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.Crossover.ProductBound"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.Crossover.ProductBound": {
+      "path": "DifferentialGeometry/External/DeGiorgi/Crossover/ProductBound.lean",
+      "sha256": "cd335500e974e4e5522e9cc4aca949dd8e9df01de9a98181f860f0eeb1b85513",
+      "bytes": 28881,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.Crossover.ExponentialIntegrability"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.Crossover.ExponentialIntegrability": {
+      "path": "DifferentialGeometry/External/DeGiorgi/Crossover/ExponentialIntegrability.lean",
+      "sha256": "6c3bf269a771bfd8f515821861b087b26653c807c2d9120ede725207f59ffc28",
+      "bytes": 96342,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.Crossover.LogGradient"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.Crossover.LogGradient": {
+      "path": "DifferentialGeometry/External/DeGiorgi/Crossover/LogGradient.lean",
+      "sha256": "1fd6d6d698f47e06d2f9e12015831ccfedd48cec541adb47894fb06fedc3cd2f",
+      "bytes": 66772,
+      "imports": [
+        "Mathlib.MeasureTheory.Integral.Layercake",
+        "Mathlib.Analysis.SpecialFunctions.ImproperIntegrals",
+        "DifferentialGeometry.External.DeGiorgi.Crossover.LocalIntegrability",
+        "DifferentialGeometry.External.DeGiorgi.Oscillation",
+        "DifferentialGeometry.External.DeGiorgi.SobolevChainRule",
+        "DifferentialGeometry.External.DeGiorgi.UnitBallApproximation",
+        "DifferentialGeometry.External.DeGiorgi.Localization",
+        "DifferentialGeometry.External.DeGiorgi.Supersolutions"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.Supersolutions": {
+      "path": "DifferentialGeometry/External/DeGiorgi/Supersolutions.lean",
+      "sha256": "207167ffa70a54d58c6687aadf8fd4371fd5d8d1c7bdc83cd0f2da94941caad0",
+      "bytes": 346,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.Supersolutions.StageOne"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.Supersolutions.StageOne": {
+      "path": "DifferentialGeometry/External/DeGiorgi/Supersolutions/StageOne.lean",
+      "sha256": "989101edf5cec1269a2818cc902e125afcf8d830804c53290cd8a2b786f42620",
+      "bytes": 29901,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.Supersolutions.ForwardIteration",
+        "DifferentialGeometry.External.DeGiorgi.Supersolutions.InverseIteration"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.Supersolutions.InverseIteration": {
+      "path": "DifferentialGeometry/External/DeGiorgi/Supersolutions/InverseIteration.lean",
+      "sha256": "e61018abef7816a5ad5d10285ee756df00eb1acfc15b5c826eccbfab3f272de3",
+      "bytes": 37575,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.Supersolutions.InverseOneStep"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.Supersolutions.InverseOneStep": {
+      "path": "DifferentialGeometry/External/DeGiorgi/Supersolutions/InverseOneStep.lean",
+      "sha256": "b39e3f4f96dfc9b05aec0ea891db0506cd549e9e269b0a797fe8d2012723bd1b",
+      "bytes": 15870,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.Supersolutions.InverseEnergy"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.Supersolutions.InverseEnergy": {
+      "path": "DifferentialGeometry/External/DeGiorgi/Supersolutions/InverseEnergy.lean",
+      "sha256": "0a4435a15b43f8481f5a6624dfe5edce16eced55fb5799442e0699dc9cdd4a3e",
+      "bytes": 77845,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.Supersolutions.RegularizationSupport",
+        "DifferentialGeometry.External.DeGiorgi.Supersolutions.Caccioppoli"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.Supersolutions.Caccioppoli": {
+      "path": "DifferentialGeometry/External/DeGiorgi/Supersolutions/Caccioppoli.lean",
+      "sha256": "39e517ae9d73d8a0ff9942b337c0b6b515c91ca984d32cf783443868e784f4aa",
+      "bytes": 22642,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.Supersolutions.TestFunctions"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.Supersolutions.TestFunctions": {
+      "path": "DifferentialGeometry/External/DeGiorgi/Supersolutions/TestFunctions.lean",
+      "sha256": "814cd2d8d6f6a1dc9a4121d1cd106234080cf88c0b6ed7e4cc8996f92e7ec659",
+      "bytes": 97306,
+      "imports": [
+        "Mathlib.Topology.Algebra.Order.LiminfLimsup",
+        "DifferentialGeometry.External.DeGiorgi.MoserIteration",
+        "DifferentialGeometry.External.DeGiorgi.Support.MeasureBounds"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.MoserIteration": {
+      "path": "DifferentialGeometry/External/DeGiorgi/MoserIteration.lean",
+      "sha256": "895bc6329d77ff471a6e3cdde0dc55766c75f7f1ca2066c483ce8341fb32075c",
+      "bytes": 313,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.MoserIteration.Linfty"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.MoserIteration.Linfty": {
+      "path": "DifferentialGeometry/External/DeGiorgi/MoserIteration/Linfty.lean",
+      "sha256": "a5572702b7212a1b5ed03675b880f903df0e2260116f20a3b26d76bf35dfe2d9",
+      "bytes": 20621,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.MoserIteration.Iteration"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.MoserIteration.Iteration": {
+      "path": "DifferentialGeometry/External/DeGiorgi/MoserIteration/Iteration.lean",
+      "sha256": "4fc7aff91b4e16a77605cf4ea4e9b84c3cb74f90ce71e039e982727e4fe806f9",
+      "bytes": 26144,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.MoserIteration.CutoffPrep.PreEstimate",
+        "Mathlib.Topology.MetricSpace.Thickening"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.MoserIteration.CutoffPrep.PreEstimate": {
+      "path": "DifferentialGeometry/External/DeGiorgi/MoserIteration/CutoffPrep/PreEstimate.lean",
+      "sha256": "51ef0a5cc16bf19033bb85050509d1d977fdcf6a2a4ff18c2f71c3431a2eeea2",
+      "bytes": 23341,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.MoserIteration.CutoffPrep.WitnessConstruction"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.MoserIteration.CutoffPrep.WitnessConstruction": {
+      "path": "DifferentialGeometry/External/DeGiorgi/MoserIteration/CutoffPrep/WitnessConstruction.lean",
+      "sha256": "c587ca3d90d5c9e2e8ecea9a804deaa14d737a8b488edbd6158cbd5ed000a3c5",
+      "bytes": 83739,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.MoserIteration.CutoffPrep.RegularizedEnergy"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.MoserIteration.CutoffPrep.RegularizedEnergy": {
+      "path": "DifferentialGeometry/External/DeGiorgi/MoserIteration/CutoffPrep/RegularizedEnergy.lean",
+      "sha256": "227541599119be4e0e180f6fdce727862fdc858f46500855111ea84f78ce2392",
+      "bytes": 74107,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.MoserIteration.CutoffPrep.RegularizedWitnesses"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.MoserIteration.CutoffPrep.RegularizedWitnesses": {
+      "path": "DifferentialGeometry/External/DeGiorgi/MoserIteration/CutoffPrep/RegularizedWitnesses.lean",
+      "sha256": "155102cf032fffc886b022e6ac243ed9a9ad765a193e90474a1539d4148f4356",
+      "bytes": 8986,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.MoserIteration.CutoffPrep.ExactRegularization"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.MoserIteration.CutoffPrep.ExactRegularization": {
+      "path": "DifferentialGeometry/External/DeGiorgi/MoserIteration/CutoffPrep/ExactRegularization.lean",
+      "sha256": "640b43b39e00a9b40f7a380174b3425117f899a1f4725fcd95bbc7d94b276a26",
+      "bytes": 44423,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.MoserIteration.CutoffPrep.Profiles"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.MoserIteration.CutoffPrep.Profiles": {
+      "path": "DifferentialGeometry/External/DeGiorgi/MoserIteration/CutoffPrep/Profiles.lean",
+      "sha256": "1d352afcc15b6355e7c792af0f0e52ab471cd70ef333f974fbd8e58491e7c3a1",
+      "bytes": 27806,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.MoserIteration.CutoffPrep.Basics"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.MoserIteration.CutoffPrep.Basics": {
+      "path": "DifferentialGeometry/External/DeGiorgi/MoserIteration/CutoffPrep/Basics.lean",
+      "sha256": "f307f94f0012909e729461d29d03658a5f04ed1830cde9fa076abe6c5c0e454e",
+      "bytes": 44619,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.MoserIteration.Sequences",
+        "Mathlib.Topology.MetricSpace.Thickening"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.MoserIteration.Sequences": {
+      "path": "DifferentialGeometry/External/DeGiorgi/MoserIteration/Sequences.lean",
+      "sha256": "91f3704aef90f994b4b493b7345f70cd878fa56a97bc659d88f22ca13749fde4",
+      "bytes": 4942,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.MoserIteration.Constants"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.MoserIteration.Constants": {
+      "path": "DifferentialGeometry/External/DeGiorgi/MoserIteration/Constants.lean",
+      "sha256": "6fc0d6c7775e9b13bb54f282fac672c784d242e69c98991b5b1e47e622d20beb",
+      "bytes": 2330,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.BallScaling",
+        "DifferentialGeometry.External.DeGiorgi.DeGiorgiIteration",
+        "DifferentialGeometry.External.DeGiorgi.Localization"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.Localization": {
+      "path": "DifferentialGeometry/External/DeGiorgi/Localization.lean",
+      "sha256": "439ebf6be0a7a4935350619ae3678feeee27b46c9f63ed1098f99a6e22b8497f",
+      "bytes": 28328,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.BallScaling",
+        "DifferentialGeometry.External.DeGiorgi.BallExtension",
+        "DifferentialGeometry.External.DeGiorgi.PositivePart"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.BallExtension": {
+      "path": "DifferentialGeometry/External/DeGiorgi/BallExtension.lean",
+      "sha256": "b770a25da1ae027fc1142d20a2fed5bbd5e9f37895060b442abcaecf282ef98d",
+      "bytes": 5827,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.BallExtension.SmoothApproximation"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.BallExtension.SmoothApproximation": {
+      "path": "DifferentialGeometry/External/DeGiorgi/BallExtension/SmoothApproximation.lean",
+      "sha256": "225c25185e09b0fd907c6a8f94ecdae78d8ef8bc14b39fabda4a0f8e9dc04fff",
+      "bytes": 84197,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.BallExtension.ApproximationControl"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.BallExtension.ApproximationControl": {
+      "path": "DifferentialGeometry/External/DeGiorgi/BallExtension/ApproximationControl.lean",
+      "sha256": "a1aa0754d89eb59ba17b8af9f100cc2daa6fecc348742a3863d1820935278f5a",
+      "bytes": 57083,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.BallExtension.SmoothCore"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.BallExtension.SmoothCore": {
+      "path": "DifferentialGeometry/External/DeGiorgi/BallExtension/SmoothCore.lean",
+      "sha256": "9cdab14380f39df2ebd89d5f94816f98b90420566dd48f37c047634dd4b4a122",
+      "bytes": 14961,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.BallExtension.RoughInput"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.BallExtension.RoughInput": {
+      "path": "DifferentialGeometry/External/DeGiorgi/BallExtension/RoughInput.lean",
+      "sha256": "67f6beddf52ff2b593d6a5458cc9666c1c9ff194b82c64fd5a1df3854051ff57",
+      "bytes": 44133,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.BallExtension.Geometry"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.BallExtension.Geometry": {
+      "path": "DifferentialGeometry/External/DeGiorgi/BallExtension/Geometry.lean",
+      "sha256": "8bac73cdb0d19342a616de5928fe4fbacc395481fa3a4159c1b489de667896be",
+      "bytes": 21910,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.BallExtension.Core"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.BallExtension.Core": {
+      "path": "DifferentialGeometry/External/DeGiorgi/BallExtension/Core.lean",
+      "sha256": "5f40b2cc994ce125ea26c389e08b7034a1daa3ac8cceafb2fdf897f451041fb2",
+      "bytes": 2857,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.SobolevSpace",
+        "DifferentialGeometry.External.DeGiorgi.UnitBallApproximation"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.BallScaling": {
+      "path": "DifferentialGeometry/External/DeGiorgi/BallScaling.lean",
+      "sha256": "bbb59195923d72cc71759939dfb49d292aee7bcbed8cd5969cd1f61bd7fe9a2e",
+      "bytes": 36339,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.UnitBallApproximation",
+        "DifferentialGeometry.External.DeGiorgi.WeakFormulation"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.WeakFormulation": {
+      "path": "DifferentialGeometry/External/DeGiorgi/WeakFormulation.lean",
+      "sha256": "e7e86394771b1b7741e685cecd550a52d1ffa52850e0e5a904142a60e9ffb5a4",
+      "bytes": 330,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.WeakFormulation.WeightedEstimates"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.WeakFormulation.WeightedEstimates": {
+      "path": "DifferentialGeometry/External/DeGiorgi/WeakFormulation/WeightedEstimates.lean",
+      "sha256": "6edd188204b6d88342649de8a8f51b2184735dcad05b750a21f30b0b86778805",
+      "bytes": 21118,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.WeakFormulation.ExistenceTheory"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.WeakFormulation.ExistenceTheory": {
+      "path": "DifferentialGeometry/External/DeGiorgi/WeakFormulation/ExistenceTheory.lean",
+      "sha256": "37e06e4fc723f7e73c51eb374fd774ed5d263edf9cda0917d77d634cba851a53",
+      "bytes": 76022,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.WeakFormulation.CoefficientOperator",
+        "Mathlib.Analysis.InnerProductSpace.LaxMilgram",
+        "Mathlib.Analysis.Normed.Operator.Extend"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.DeGiorgiIteration": {
+      "path": "DifferentialGeometry/External/DeGiorgi/DeGiorgiIteration.lean",
+      "sha256": "c4f1d2e21bdc368b66df65e9c1f6e0a05db5a5a74c881ee045b811de19486223",
+      "bytes": 327,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.DeGiorgiIteration.Linfty"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.DeGiorgiIteration.Linfty": {
+      "path": "DifferentialGeometry/External/DeGiorgi/DeGiorgiIteration/Linfty.lean",
+      "sha256": "aaadd62a2a9d240212ec18255fae09e91dd5b3ae2879ebbfc3323821dd759ae4",
+      "bytes": 62442,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.DeGiorgiIteration.Recurrence"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.DeGiorgiIteration.Recurrence": {
+      "path": "DifferentialGeometry/External/DeGiorgi/DeGiorgiIteration/Recurrence.lean",
+      "sha256": "52d4b1d2c8e5dd1c4ed87d267235db3b2a92bb5827b47a74d4d67e9f7ff13155",
+      "bytes": 14589,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.DeGiorgiIteration.PreIteration"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.DeGiorgiIteration.PreIteration": {
+      "path": "DifferentialGeometry/External/DeGiorgi/DeGiorgiIteration/PreIteration.lean",
+      "sha256": "960f2040f8e232445f93cff4c04806b6c2bf5f8a89be2596073b94f61dd371ab",
+      "bytes": 54965,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.DeGiorgiIteration.Energy"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.DeGiorgiIteration.Energy": {
+      "path": "DifferentialGeometry/External/DeGiorgi/DeGiorgiIteration/Energy.lean",
+      "sha256": "858cd7939ca2dcc23e715759af8a73c03e5638017fe4b0e935e578deb5145783",
+      "bytes": 55261,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.DeGiorgiIteration.CutoffAdmissibility"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.DeGiorgiIteration.CutoffAdmissibility": {
+      "path": "DifferentialGeometry/External/DeGiorgi/DeGiorgiIteration/CutoffAdmissibility.lean",
+      "sha256": "ba4ef3df8e3fa03a5311bd6445e0a9f971662f15e841c9235ea5293fdb04c343",
+      "bytes": 12100,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.PositivePart",
+        "DifferentialGeometry.External.DeGiorgi.BallExtension",
+        "DifferentialGeometry.External.DeGiorgi.WeakFormulation"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.Supersolutions.RegularizationSupport": {
+      "path": "DifferentialGeometry/External/DeGiorgi/Supersolutions/RegularizationSupport.lean",
+      "sha256": "a544060b9c5ed34e0ce42d82bdc6df64082acd12bc5b541b9fc09a6dd184d2e7",
+      "bytes": 15936,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.Supersolutions.TestFunctions"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.Supersolutions.ForwardIteration": {
+      "path": "DifferentialGeometry/External/DeGiorgi/Supersolutions/ForwardIteration.lean",
+      "sha256": "f663f345d4479a0fd6a19f45a98d05c2550f5e66c566bb2857af1668f72f01f2",
+      "bytes": 279,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.Supersolutions.ForwardIteration.Iteration"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.Supersolutions.ForwardIteration.Iteration": {
+      "path": "DifferentialGeometry/External/DeGiorgi/Supersolutions/ForwardIteration/Iteration.lean",
+      "sha256": "d92eb59d800ca33836c523cc198b94e875063867ff572ca9395d29b43af730b2",
+      "bytes": 23598,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.Supersolutions.ForwardIteration.OneStep"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.Supersolutions.ForwardIteration.OneStep": {
+      "path": "DifferentialGeometry/External/DeGiorgi/Supersolutions/ForwardIteration/OneStep.lean",
+      "sha256": "03f001d59e313ad17394e7c1e433d19feb7b4e7b2cb6e5b280997ab38395f177",
+      "bytes": 14856,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.Supersolutions.ForwardIteration.Energy"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.Supersolutions.ForwardIteration.Energy": {
+      "path": "DifferentialGeometry/External/DeGiorgi/Supersolutions/ForwardIteration/Energy.lean",
+      "sha256": "6e19216b4b0d632dde4edf58f0bd9bdb7bfa0ce7be1be0a79aa4e439bfbadab3",
+      "bytes": 80605,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.Supersolutions.ForwardIteration.Basics"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.Supersolutions.ForwardIteration.Basics": {
+      "path": "DifferentialGeometry/External/DeGiorgi/Supersolutions/ForwardIteration/Basics.lean",
+      "sha256": "414813cf38287512dc7f1d5483917d545e6e4defe3c89e323fe55a6e7006e3c4",
+      "bytes": 4950,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.Supersolutions.RegularizationSupport"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.Oscillation": {
+      "path": "DifferentialGeometry/External/DeGiorgi/Oscillation.lean",
+      "sha256": "a8bd04c7715b43d7719d7fce067fb8ef70918dc47480fda85c9d535d93e6d442",
+      "bytes": 401,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.Oscillation.BMO",
+        "DifferentialGeometry.External.DeGiorgi.Oscillation.LocalJohnNirenberg",
+        "DifferentialGeometry.External.DeGiorgi.Oscillation.Campanato"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.Oscillation.Campanato": {
+      "path": "DifferentialGeometry/External/DeGiorgi/Oscillation/Campanato.lean",
+      "sha256": "eca567a4c6013dd9dbd324b3f0567bfb971ec8a68c4a58d2723d234517373b45",
+      "bytes": 56941,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.Oscillation.BMO"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.Oscillation.BMO": {
+      "path": "DifferentialGeometry/External/DeGiorgi/Oscillation/BMO.lean",
+      "sha256": "f058625ce847762e404ec0436474aa8ac34c6c88263815d7e972c5ae67598071",
+      "bytes": 24175,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.Common"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.Oscillation.LocalJohnNirenberg": {
+      "path": "DifferentialGeometry/External/DeGiorgi/Oscillation/LocalJohnNirenberg.lean",
+      "sha256": "480532afbc1716e9d15484813e3532b01a2f76ad0b38524b377bc5ae674219b6",
+      "bytes": 101480,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.Oscillation.BMO"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.Crossover.LocalIntegrability": {
+      "path": "DifferentialGeometry/External/DeGiorgi/Crossover/LocalIntegrability.lean",
+      "sha256": "b898c16f957c3ae4fb2c4d0657255613edc3ac5caa8e88b2a00a509d48296bc5",
+      "bytes": 34265,
+      "imports": [
+        "Mathlib.MeasureTheory.Integral.Layercake",
+        "Mathlib.Analysis.SpecialFunctions.ImproperIntegrals",
+        "DifferentialGeometry.External.DeGiorgi.Oscillation",
+        "DifferentialGeometry.External.DeGiorgi.FiniteCover",
+        "DifferentialGeometry.External.DeGiorgi.SobolevPoincare",
+        "DifferentialGeometry.External.DeGiorgi.SobolevChainRule",
+        "DifferentialGeometry.External.DeGiorgi.UnitBallApproximation",
+        "DifferentialGeometry.External.DeGiorgi.Localization",
+        "DifferentialGeometry.External.DeGiorgi.Supersolutions"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.SobolevPoincare": {
+      "path": "DifferentialGeometry/External/DeGiorgi/SobolevPoincare.lean",
+      "sha256": "1cafc27ff2ff809dc146b87e2022f727633d5cdfb477784984c377d537955755",
+      "bytes": 38831,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.SobolevSpace",
+        "DifferentialGeometry.External.DeGiorgi.Poincare",
+        "DifferentialGeometry.External.DeGiorgi.BallExtension",
+        "DifferentialGeometry.External.DeGiorgi.BallExtensionEstimates",
+        "DifferentialGeometry.External.DeGiorgi.LpFunctionToolkit"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.LpFunctionToolkit": {
+      "path": "DifferentialGeometry/External/DeGiorgi/LpFunctionToolkit.lean",
+      "sha256": "01580a9e173032ad05cb5d425f5839adc2d6463d5613d46f88d89062f7e8fcf1",
+      "bytes": 22764,
+      "imports": [
+        "Mathlib.MeasureTheory.Function.LpSeminorm.Basic",
+        "Mathlib.MeasureTheory.Function.LpSeminorm.TriangleInequality",
+        "Mathlib.MeasureTheory.Function.LpSpace.Complete",
+        "Mathlib.MeasureTheory.Function.ConvergenceInMeasure",
+        "Mathlib.MeasureTheory.Function.StronglyMeasurable.AEStronglyMeasurable",
+        "Mathlib.MeasureTheory.Measure.MeasureSpaceDef",
+        "Mathlib.Analysis.Normed.Lp.PiLp"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.BallExtensionEstimates": {
+      "path": "DifferentialGeometry/External/DeGiorgi/BallExtensionEstimates.lean",
+      "sha256": "d94ce5644829ff6a5951cf602b569d2738a53def0f1b935ab8f06b599eab4006",
+      "bytes": 53484,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.BallExtension",
+        "DifferentialGeometry.External.DeGiorgi.LpFunctionToolkit"
+      ]
+    },
+    "DifferentialGeometry.External.DeGiorgi.FiniteCover": {
+      "path": "DifferentialGeometry/External/DeGiorgi/FiniteCover.lean",
+      "sha256": "f1bbdcc8b3b9d24938b70b0cb015325df035bf5c8b5c59327c9948f67801f28b",
+      "bytes": 13785,
+      "imports": [
+        "DifferentialGeometry.External.DeGiorgi.Common"
+      ]
+    }
+  },
+  "kernel_audit_status": "PASSED: degiorgi-axioms-01, Lean 4.33.1, only propext/Classical.choice/Quot.sound",
+  "local_modifications": [
+    {
+      "path": "DifferentialGeometry/External/DeGiorgi/Common.lean",
+      "change": "Replace import Mathlib with explicit imports; declarations and proofs unchanged.",
+      "upstream_sha256": "82f70971c573e42189e19dd37147fc3781ad13f2b31e9ca43553b07a4ad5e869",
+      "local_sha256": "1cf91860cf1c19e89b1de18f44f9d72914267833dd8e81bc1ecc51c451135dd1",
+      "patch": "scoped-imports.patch",
+      "kernel_status": "Full vendored closure compiled: degiorgi-build-08"
+    }
+  ],
+  "external_imports_upstream": [
+    "Mathlib",
+    "Mathlib.Analysis.Calculus.BumpFunction.Convolution",
+    "Mathlib.Analysis.Calculus.BumpFunction.Normed",
+    "Mathlib.Analysis.Calculus.ContDiff.Convolution",
+    "Mathlib.Analysis.Convex.Integral",
+    "Mathlib.Analysis.InnerProductSpace.LaxMilgram",
+    "Mathlib.Analysis.Normed.Lp.PiLp",
+    "Mathlib.Analysis.Normed.Lp.SmoothApprox",
+    "Mathlib.Analysis.Normed.Operator.Extend",
+    "Mathlib.Analysis.SpecialFunctions.ImproperIntegrals",
+    "Mathlib.Geometry.Manifold.PartitionOfUnity",
+    "Mathlib.MeasureTheory.Function.ConvergenceInMeasure",
+    "Mathlib.MeasureTheory.Function.LpSeminorm.Basic",
+    "Mathlib.MeasureTheory.Function.LpSeminorm.TriangleInequality",
+    "Mathlib.MeasureTheory.Function.LpSpace.Complete",
+    "Mathlib.MeasureTheory.Function.StronglyMeasurable.AEStronglyMeasurable",
+    "Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap",
+    "Mathlib.MeasureTheory.Integral.Layercake",
+    "Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar",
+    "Mathlib.MeasureTheory.Measure.MeasureSpaceDef",
+    "Mathlib.Topology.Algebra.Order.LiminfLimsup",
+    "Mathlib.Topology.MetricSpace.Thickening"
+  ],
+  "external_imports_local": [
+    "Mathlib.Analysis.Calculus.BumpFunction.Convolution",
+    "Mathlib.Analysis.Calculus.BumpFunction.Normed",
+    "Mathlib.Analysis.Calculus.ContDiff.Bounds",
+    "Mathlib.Analysis.Calculus.ContDiff.Convolution",
+    "Mathlib.Analysis.Calculus.FDeriv.Norm",
+    "Mathlib.Analysis.Calculus.FDeriv.Symmetric",
+    "Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts",
+    "Mathlib.Analysis.Calculus.LocalExtr.LineDeriv",
+    "Mathlib.Analysis.Calculus.Rademacher",
+    "Mathlib.Analysis.Convex.Integral",
+    "Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff",
+    "Mathlib.Analysis.FunctionalSpaces.SobolevInequality",
+    "Mathlib.Analysis.InnerProductSpace.LaxMilgram",
+    "Mathlib.Analysis.Normed.Group.Indicator",
+    "Mathlib.Analysis.Normed.Lp.PiLp",
+    "Mathlib.Analysis.Normed.Lp.SmoothApprox",
+    "Mathlib.Analysis.Normed.Module.Connected",
+    "Mathlib.Analysis.Normed.Operator.Extend",
+    "Mathlib.Analysis.SpecialFunctions.ImproperIntegrals",
+    "Mathlib.Analysis.SpecialFunctions.Log.Deriv",
+    "Mathlib.Analysis.SpecialFunctions.Pow.Integral",
+    "Mathlib.Geometry.Euclidean.Inversion.Calculus",
+    "Mathlib.Geometry.Manifold.PartitionOfUnity",
+    "Mathlib.LinearAlgebra.Matrix.NonsingularInverse",
+    "Mathlib.MeasureTheory.Covering.Besicovitch",
+    "Mathlib.MeasureTheory.Covering.DensityTheorem",
+    "Mathlib.MeasureTheory.Covering.Vitali",
+    "Mathlib.MeasureTheory.Function.ConvergenceInMeasure",
+    "Mathlib.MeasureTheory.Function.EssSup",
+    "Mathlib.MeasureTheory.Function.L2Space",
+    "Mathlib.MeasureTheory.Function.LpSeminorm.Basic",
+    "Mathlib.MeasureTheory.Function.LpSeminorm.LpNorm",
+    "Mathlib.MeasureTheory.Function.LpSeminorm.TriangleInequality",
+    "Mathlib.MeasureTheory.Function.LpSpace.Complete",
+    "Mathlib.MeasureTheory.Function.SpecialFunctions.Inner",
+    "Mathlib.MeasureTheory.Function.StronglyMeasurable.AEStronglyMeasurable",
+    "Mathlib.MeasureTheory.Function.UnifTight",
+    "Mathlib.MeasureTheory.Function.UniformIntegrable",
+    "Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap",
+    "Mathlib.MeasureTheory.Integral.IntervalIntegral.AbsolutelyContinuousFun",
+    "Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus",
+    "Mathlib.MeasureTheory.Integral.IntervalIntegral.LebesgueDifferentiationThm",
+    "Mathlib.MeasureTheory.Integral.Layercake",
+    "Mathlib.MeasureTheory.Integral.MeanInequalities",
+    "Mathlib.MeasureTheory.Measure.Lebesgue.Basic",
+    "Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar",
+    "Mathlib.MeasureTheory.Measure.MeasureSpaceDef",
+    "Mathlib.MeasureTheory.Order.Group.Lattice",
+    "Mathlib.MeasureTheory.SpecificCodomains.WithLp",
+    "Mathlib.Tactic",
+    "Mathlib.Topology.Algebra.Order.LiminfLimsup",
+    "Mathlib.Topology.MetricSpace.Holder",
+    "Mathlib.Topology.MetricSpace.Thickening"
+  ]
+}

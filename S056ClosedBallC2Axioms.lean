@@ -1,0 +1,19 @@
+import KEBall.DirichletBoundaryHessianCluster
+import KEBall.DirichletClosedBallHessianRegularity
+import KEBall.DirichletLogDensityClosedBallC2
+import KEBall.DirichletSchauderContraction
+
+#print axioms KEBall.continuous_dirichlet_complexHessianOfRealBilinear
+#print axioms KEBall.dirichlet_posSemidef_of_tendsto_matrix
+#print axioms KEBall.dirichlet_boundary_hessian_cluster_data
+#print axioms KEBall.exists_dirichlet_boundary_hessian_limit
+#print axioms KEBall.exists_dirichlet_rotation_hessian_trace
+#print axioms KEBall.exists_dirichlet_actual_boundary_hessian_limits
+#print axioms KEBall.contDiffOn_two_dirichlet_of_rotation_boundary_power
+#print axioms KEBall.exists_dirichlet_closedBall_C2_limit_of_logDensityPath
+#print axioms KEBall.dirichletSchauderMatrix
+#print axioms KEBall.dirichlet_schauder_matrixLap_eq_contraction
+#print axioms KEBall.dirichlet_schauder_matrixLap_cofactor
+#print axioms KEBall.abs_dirichletSchauderMatrix_sub_le
+#print axioms KEBall.dirichletSchauderMatrix_holder_of_operator_holder
+#print axioms KEBall.dirichlet_variableMatrixLap_eq_contraction

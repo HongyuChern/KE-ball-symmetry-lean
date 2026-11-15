@@ -1,0 +1,120 @@
+{
+  "origin": "https://github.com/qinz1yang/differential-geometry",
+  "tag": "v0.1.3",
+  "commit": "7a48598d35109aa99d1cc678e2724c213cdf4ff3",
+  "archive_sha256": "bd20540b56c423e13ffef14d379a54ec9b62da74c7ab4679b608b8918aca8eaf",
+  "lean_toolchain": "leanprover/lean4:v4.33.1",
+  "saved_at_utc": "2026-11-13T15:54:31.178469+00:00",
+  "root_module": "DifferentialGeometry.Analysis.Schauder.Holder.IteratedDerivative",
+  "closure_files": [
+    {
+      "path": "DifferentialGeometry/Analysis/Calculus/IteratedDerivative/Regularity.lean",
+      "bytes": 6603,
+      "sha256": "a1959897d38bfa6d22d1578048cbd05d7e600f6d7a1cae4e9e6af9b5e64f2574",
+      "new": true
+    },
+    {
+      "path": "DifferentialGeometry/Analysis/Schauder/Holder/Multilinear.lean",
+      "bytes": 3575,
+      "sha256": "fc2b25b254ceb3da3c191087a79eadf5d1e32bfed6990adceffcd435b26810aa",
+      "new": true
+    },
+    {
+      "path": "DifferentialGeometry/Analysis/Schauder/Holder/Basic.lean",
+      "bytes": 54688,
+      "sha256": "f2bb66bdb5b4c9514c7e204a78d6511e17fe094b0d0b33711a82ef21367411f0",
+      "new": false
+    },
+    {
+      "path": "DifferentialGeometry/Analysis/Schauder/Holder/Scaling.lean",
+      "bytes": 97837,
+      "sha256": "56e187ae788db7402b0734c86a6bd1e5e539e2b7f6aae49024f1ebf927a5b5ce",
+      "new": false
+    },
+    {
+      "path": "DifferentialGeometry/Analysis/Schauder/Holder/Localization.lean",
+      "bytes": 56366,
+      "sha256": "0eddf4424af8b8cc6c769878521263cb86892e29b3b4870466629639d4e2af85",
+      "new": false
+    },
+    {
+      "path": "DifferentialGeometry/Analysis/Schauder/Holder/Composition.lean",
+      "bytes": 8619,
+      "sha256": "c35d30774a135a85ad90b385e58325197568cfab7841c2923b9bb4251e130e98",
+      "new": true
+    },
+    {
+      "path": "DifferentialGeometry/Analysis/Schauder/Holder/SecondOrderComposition.lean",
+      "bytes": 18628,
+      "sha256": "767961bb974c04d15b2d502ac5f1ad3651619e9ebee08c0d9bac714269ccf5d2",
+      "new": true
+    },
+    {
+      "path": "DifferentialGeometry/Topology/Equicontinuity.lean",
+      "bytes": 2913,
+      "sha256": "f28b873d12bbcb80d830f1f1df07e6ba0f305fd099edec5f5583331eacf44fb3",
+      "new": true
+    },
+    {
+      "path": "DifferentialGeometry/Analysis/Calculus/Compactness/DiagonalSubsequence.lean",
+      "bytes": 2950,
+      "sha256": "65d38ce38e691aa348a4dfd3ef5f8e807d6a81b431b158ee9bf1549af901f680",
+      "new": true
+    },
+    {
+      "path": "DifferentialGeometry/Analysis/Calculus/Compactness/PointwiseCompact.lean",
+      "bytes": 5027,
+      "sha256": "113459ab6ef1f0fdf22ea24113d48d9e5c3fc44ddd37bb75f837e7089b258759",
+      "new": true
+    },
+    {
+      "path": "DifferentialGeometry/Analysis/Calculus/Compactness/ArzelaAscoli.lean",
+      "bytes": 14458,
+      "sha256": "545948f7752205b413869361ffc86b0d5af20994f939fbde3455fc4554cd60ca",
+      "new": true
+    },
+    {
+      "path": "DifferentialGeometry/Analysis/Schauder/Holder/Compactness.lean",
+      "bytes": 5804,
+      "sha256": "1c8a0a052cc0244b26f3ee5d378c7f2476e3481d1524edcc8939cb8719985b55",
+      "new": true
+    },
+    {
+      "path": "DifferentialGeometry/Analysis/Schauder/Holder/CompactRegularity.lean",
+      "bytes": 11323,
+      "sha256": "9df3d542493d4e05b80d85cfa5fff76aaa121cce4ea51c558dc756f380d73306",
+      "new": true
+    },
+    {
+      "path": "DifferentialGeometry/Analysis/Schauder/Holder/HigherOrderComposition.lean",
+      "bytes": 11590,
+      "sha256": "ee6c930f8ed3bd66c43a36fcec97ddb87bc61497f4d2c732d81a483ffd1e9b06",
+      "new": true
+    },
+    {
+      "path": "DifferentialGeometry/Analysis/Schauder/Holder/IteratedDerivative.lean",
+      "bytes": 9906,
+      "sha256": "2cccfb74cebe46f8f6becd51f8de5ecb78d9c8e4da9b3fb550539bc1060f00b2",
+      "new": true
+    }
+  ],
+  "new_files": [
+    "DifferentialGeometry/Analysis/Calculus/IteratedDerivative/Regularity.lean",
+    "DifferentialGeometry/Analysis/Schauder/Holder/Multilinear.lean",
+    "DifferentialGeometry/Analysis/Schauder/Holder/Composition.lean",
+    "DifferentialGeometry/Analysis/Schauder/Holder/SecondOrderComposition.lean",
+    "DifferentialGeometry/Topology/Equicontinuity.lean",
+    "DifferentialGeometry/Analysis/Calculus/Compactness/DiagonalSubsequence.lean",
+    "DifferentialGeometry/Analysis/Calculus/Compactness/PointwiseCompact.lean",
+    "DifferentialGeometry/Analysis/Calculus/Compactness/ArzelaAscoli.lean",
+    "DifferentialGeometry/Analysis/Schauder/Holder/Compactness.lean",
+    "DifferentialGeometry/Analysis/Schauder/Holder/CompactRegularity.lean",
+    "DifferentialGeometry/Analysis/Schauder/Holder/HigherOrderComposition.lean",
+    "DifferentialGeometry/Analysis/Schauder/Holder/IteratedDerivative.lean"
+  ],
+  "byte_identical": true,
+  "manifest_modified": false,
+  "compile_status": "passed",
+  "compile_log": "higher-holder-import-build-01",
+  "lake_jobs": 2510
+}

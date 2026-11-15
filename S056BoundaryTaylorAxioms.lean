@@ -1,0 +1,11 @@
+import KEBall.DirichletCoreAnnulusHolder
+import KEBall.DirichletClosedBallHessianHolder
+import KEBall.DirichletHolderTaylor
+import KEBall.DirichletInteriorRotationEquation
+
+#print axioms KEBall.hasDirichletHolderOn_closedBall_of_core_annulus
+#print axioms KEBall.exists_dirichlet_closedBall_holder_realHessian
+#print axioms KEBall.norm_dirichlet_first_order_remainder_le
+#print axioms KEBall.norm_dirichlet_second_order_remainder_le
+#print axioms KEBall.dirichlet_complexHessian_linearField_on_open
+#print axioms KEBall.dirichlet_cofactor_rotation_equation_on_open
