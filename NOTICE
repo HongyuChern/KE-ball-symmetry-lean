@@ -2,7 +2,7 @@ KE-Ball Symmetry Lean formalization
 Copyright 2026 The KE-Ball Symmetry Lean formalization contributors.
 
 The original Lean formalization and repository tools are distributed under the
-Apache License, Version 2.0. See THIRD_PARTY.md for source attributions and
+Apache License, Version 2.0. See docs/THIRD_PARTY.md for source attributions and
 licenses, including those for the bundled elliptic regularity code.
 
 The manuscript in paper/ is the work of Hongyu Chen and Li Ma. The rights

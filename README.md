@@ -1,43 +1,39 @@
-# Radial symmetry for the positive Kähler–Einstein Dirichlet problem on the ball
+# Kähler–Einstein Dirichlet symmetry on the ball in Lean
 
-Lean 4 formalization of the [final manuscript](paper/chen-KE-Ball-Symmetry-2026.tex) by Hongyu Chen and Li Ma. The development classifies the smooth positive Kähler–Einstein Dirichlet solutions on the complex unit ball and formalizes the sharp Moser–Trudinger inequality on the Cegrell finite-energy class.
+This repository contains the Lean 4 formalization of *Radial symmetry for the positive Kähler–Einstein Dirichlet problem on the ball* by Hongyu Chen and Li Ma. The source is the [final manuscript](paper/chen-KE-Ball-Symmetry-2026.tex).
 
-| Result | Lean entry point |
-| --- | --- |
-| Theorem 1.1, Corollary 1.2 and the smooth proof assembly | [`smoothPaper`](KEBallComparator/Solution.lean#L14) |
-| Positive roots and the critical parameter | [`positiveRoots`](KEBallComparator/Solution.lean#L17) |
-| Smooth Bedford–Taylor measure compatibility | [`smoothCompatibility`](KEBallComparator/Solution.lean#L25) |
-| Subcritical attainment on the Cegrell class | [`subcriticalAttainment`](KEBallComparator/Solution.lean#L34) |
-| Corollary 1.3, finite exponential integral and critical inequality | [`criticalInequality`](KEBallComparator/Solution.lean#L39) |
-| Sharp energy coefficient and additive constant | [`optimalEnergyCoefficient`](KEBallComparator/Solution.lean#L28) and [`optimalAdditiveConstant`](KEBallComparator/Solution.lean#L31) |
+`import KEBallComparator.Solution` exposes the seven verification targets, including the [smooth-paper assembly](KEBall/PaperFormalization20261016.lean#L36). The main results are listed below. The [manuscript correspondence](docs/manuscript-correspondence.md) maps Propositions 3.1 and 3.2 to their Lean statement.
 
-The [statements](KEBallComparator/Statements.lean) fix the propositions checked by the [Comparator challenge](KEBallComparator/Challenge.lean). The [solution module](KEBallComparator/Solution.lean) provides the corresponding proofs. The [manuscript correspondence](docs/manuscript-correspondence.md) maps the two Section 3 propositions to their shared Lean statement.
+| Paper | Lean declaration | Result | Proof |
+| --- | --- | --- | --- |
+| Theorem 1.1 | `KEBall.Stage09.classification_and_counts` | Radial classification of smooth positive Dirichlet solutions and the two, one, or zero solution counts | [Classification and counts](Drafts/KEBall/ClassificationEndpoints.lean#L47) |
+| Corollary 1.2 | `KEBall.Paper20261016.meanFieldClassification` | Existence and uniqueness of smooth mean-field solutions exactly in the subcritical range | [Mean-field classification](KEBall/PaperBridges20261016.lean#L50) |
+| Corollary 1.3 | `KEBallComparator.Targets.criticalInequality` | Sharp Moser–Trudinger inequality and finite exponential integral on the Cegrell finite-energy class | [Critical inequality](KEBallComparator/Solution.lean#L39) |
+| Corollary 1.3 (optimal constants) | `KEBallComparator.Targets.optimalEnergyCoefficient`, `KEBallComparator.Targets.optimalAdditiveConstant` | Optimal energy coefficient and optimal harmonic-number additive constant | [Energy coefficient](KEBall/MoserTrudingerFiniteEnergy.lean#L123) · [Additive constant](KEBall/MoserTrudingerFiniteEnergy.lean#L107) |
+
+The critical inequality follows from [subcritical attainment on the full finite-energy class](KEBall/MoserTrudingerSubcriticalAttainment.lean#L20) by passage to the critical parameter.
 
 ## Build
 
-Use Lean 4.33.1 with the dependency revisions in [lake-manifest.json](lake-manifest.json). Run the following commands from the repository root.
+Install [Elan](https://github.com/leanprover/elan) and run the commands below in the repository root. The toolchain is Lean 4.33.1, with Mathlib at revision `0df444a360eaa60ab8c11dca51a86af692955474`. [Lake's lock file](lake-manifest.json) lists the remaining dependencies.
 
 ```sh
 lake exe cache get
 lake build +KEBallComparator.Solution
 ```
 
-The cache command is optional. See the [Comparator instructions](KEBallComparator/README.md) for the Linux release check and for validating a saved receipt.
+The [v0.1.0 source release](https://github.com/HongyuChern/KE-ball-symmetry-lean/releases/tag/v0.1.0) contains **205,287 lines of Lean** across all tracked Lean files. The transitive import closure of `KEBallComparator.Solution` contains **1,995,054 lines of Lean**, counting each source file once, including the Lean toolchain, Mathlib, and other dependencies.
 
-## Dependencies
+## Comparator
 
-The project pins Mathlib, PoincaréConjecture and PshLines through Lake. The bundled De Giorgi and Schauder sources retain their [license](vendor/de_giorgi/LICENSE) and [upstream notice](vendor/de_giorgi/UPSTREAM-NOTICE). Their file-level provenance is recorded in [vendor/de_giorgi](vendor/de_giorgi).
+The challenge states seven verification targets using the shared project definitions. Its proof placeholders are filled by the solution. The Linux run under Landrun and a systemd user service passed all seven targets in Lean and Nanoda. The permitted axioms are `propext`, `Classical.choice`, and `Quot.sound`.
 
-## Verification
+[Challenge](KEBallComparator/Challenge.lean) · [Statements](KEBallComparator/Statements.lean) · [Solution](KEBallComparator/Solution.lean) · [Configuration](KEBallComparator/config.json) · [Linux verification receipt](verification/receipt.json) · [Reproduction instructions](KEBallComparator/README.md)
 
-All seven targets passed the Linux release configuration with both the Lean and Nanoda kernels. The [receipt](verification/receipt.json) records the configuration, exact input hashes, locked revisions, and kernel results. The [Comparator log](verification/comparator.log), [tool build log](verification/build.log), and [environment record](verification/environment.txt) accompany it.
+## Source and attribution
 
-Run the following command to check that the saved evidence matches this source tree.
+[KEBall/](KEBall/) contains the main proof library. [Drafts/](Drafts/) and [KEBallProbe/](KEBallProbe/) supply supporting modules used by the formalization. [verification/](verification/) collects the runner, validation files, and proof-checking evidence.
 
-```sh
-python3 tools/run_comparator.py --verify-receipt verification/receipt.json
-```
+The bundled De Giorgi and Schauder code supplies elliptic regularity estimates. The matrix determinant proof adapts PoincareLib's Jacobi formula to complex matrices. [Jacobi formula implementation](KEBallProbe/ComplexDeterminant.lean) · [Upstream sources, credits, and licenses](docs/THIRD_PARTY.md)
 
-## License
-
-The original formalization code and repository tools use [Apache-2.0](LICENSE). Third-party material retains its [source attributions and licenses](THIRD_PARTY.md). The rights holders retain their rights in the [manuscript](paper/chen-KE-Ball-Symmetry-2026.tex).
+The original formalization code and verification tools use [Apache-2.0](LICENSE). The rights holders retain their rights in the manuscript.

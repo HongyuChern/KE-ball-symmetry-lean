@@ -31,7 +31,8 @@ def source_hashes():
     files = [ROOT / name for name in ("lean-toolchain", "lakefile.toml", "lake-manifest.json")]
     files.extend(ROOT.glob("*.lean"))
     files.extend((PAPER, Path(__file__).resolve()))
-    for directory in ("KEBall", "KEBallProbe", "Drafts", "KEBallComparator", "Validation"):
+    for directory in ("KEBall", "KEBallProbe", "Drafts", "KEBallComparator",
+                      "verification/audits", "verification/validation"):
         files.extend((ROOT / directory).rglob("*.lean"))
     files.extend(LIB.glob("config*.json"))
     return {str(path.relative_to(ROOT)): sha256(path) for path in sorted(files)}

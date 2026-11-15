@@ -1,9 +1,11 @@
-# Verification of the final manuscript
+# Verification
 
-The Linux release check ran on the clean source commit `d75a2ea960ef2f169d594ee60e4755204d0ff3f3`. The [receipt](receipt.json) records all seven targets, the final manuscript hash, the locked dependencies, executable hashes, and the success markers from Lean and Nanoda. The [environment record](environment.txt) and the original [Comparator log](comparator.log) and [tool build log](build.log) accompany it.
+The Linux release configuration checks all seven Comparator targets using Lean and Nanoda. The [receipt](receipt.json) records the verified source commit, manuscript hash, dependency revisions, executable hashes, and results. The original [Comparator log](comparator.log), [tool build log](build.log), and [environment record](environment.txt) accompany it.
 
-The release tag adds the evidence and editorial documentation to that source commit. The Comparator input hashes match the tagged files. To reproduce the full Comparator run, follow the [Linux verification instructions](../KEBallComparator/README.md). To check the saved evidence against an extracted release tree, run the following command from its root.
+To check the saved evidence against the current tree, run the following command from the repository root.
 
 ```sh
-python3 tools/run_comparator.py --verify-receipt verification/receipt.json
+python3 verification/run_comparator.py --verify-receipt verification/receipt.json
 ```
+
+See the [Linux instructions](../KEBallComparator/README.md) to rerun both kernels. The [validation files](validation/) are stand-alone Lean checks, and [audits/](audits/) contains the earlier declaration-specific probes.

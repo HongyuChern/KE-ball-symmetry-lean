@@ -36,7 +36,7 @@ export PATH="$KE_COMPARATOR_TOOLS/bin:$PATH"
 
 With both executables installed for the current Linux user, run from the repository root:
 
-    python3 tools/run_comparator.py --output /absolute/path/to/new-ke-comparator-evidence
+    python3 verification/run_comparator.py --output /absolute/path/to/new-ke-comparator-evidence
 
 The runner builds the pinned Comparator and lean4export executables. Lake materializes missing dependencies from the checked-in manifest, and the runner checks all dependency revisions before invoking Comparator. Comparator runs in the user systemd service with the address-family restriction from the reference setup. It builds and exports the challenge and solution, compares the propositions, checks transitive axioms and replays the proofs in Nanoda and Lean. The only permitted axioms are propext, Classical.choice and Quot.sound.
 
@@ -44,12 +44,12 @@ Use a disk-backed output directory for the logs and temporary files. A successfu
 
 To check the saved evidence against the same sources without running either kernel, keep the three files together and run:
 
-    python3 tools/run_comparator.py --verify-receipt /absolute/path/to/evidence/receipt.json
+    python3 verification/run_comparator.py --verify-receipt /absolute/path/to/evidence/receipt.json
 
 This checks the files, target scope, log digests and success markers. Reproduce the kernel checks using the release command above. The published evidence for the [Poincaré formalization](https://github.com/frenzymath/Poincare-Conjecture/blob/main/archive/PoincareConjecture/references/ricci-flow/mapher/integration-verification/README.md) follows this same practice of retaining the checked revision, verifier configuration and logs.
 
 ## Check the available proofs locally
 
-    python3 tools/run_comparator.py --preflight
+    python3 verification/run_comparator.py --preflight
 
 The preflight configuration checks the smooth-paper assembly, positive roots, smooth compatibility and the two sharpness results. On macOS it uses Comparator's upstream development shim and the Lean default kernel. The resulting receipt records macos-development and release_verified=false. The release configuration also demands unconditional subcritical attainment and the critical inequality, and requires the dual-kernel Linux run.
