@@ -22,7 +22,7 @@ lake exe cache get
 lake build +KEBallComparator.Solution
 ```
 
-The [v0.1.0 source release](https://github.com/HongyuChern/KE-ball-symmetry-lean/releases/tag/v0.1.0) contains **205,287 lines of Lean** across all tracked Lean files. The transitive import closure of `KEBallComparator.Solution` contains **1,995,054 lines of Lean**, counting each source file once, including the Lean toolchain, Mathlib, and other dependencies.
+The v0.1.1 source release contains **205,287 lines of Lean**. The complete import closure of `KEBallComparator.Solution` contains **1,995,054 lines of Lean**, counting each source file once and including imports from Mathlib, the Lean toolchain, and other dependencies.
 
 ## Comparator
 
