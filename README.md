@@ -1,6 +1,6 @@
 # Kähler–Einstein Dirichlet symmetry on the ball in Lean
 
-This repository contains the Lean 4 formalization of *Radial symmetry for the positive Kähler–Einstein Dirichlet problem on the ball* by Hongyu Chen and Li Ma. The source is the [final manuscript](paper/chen-KE-Ball-Symmetry-2026.tex).
+This repository contains the Lean 4 formalization of *Radial symmetry for the positive Kähler–Einstein Dirichlet problem on the ball* by Hongyu Chen and Li Ma. The paper is available as [arXiv:2611.21007](https://arxiv.org/abs/2611.21007).
 
 `import KEBallComparator.Solution` exposes the seven verification targets, including the [smooth-paper assembly](KEBall/PaperFormalization20261016.lean#L36). The main results are listed below. The [manuscript correspondence](docs/manuscript-correspondence.md) maps Propositions 3.1 and 3.2 to their Lean statement.
 
