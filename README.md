@@ -28,7 +28,9 @@ The v0.1.1 source release contains **205,287 lines of Lean**. The complete impor
 
 The challenge states seven verification targets using the shared project definitions. Its proof placeholders are filled by the solution. The Linux run under Landrun and a systemd user service passed all seven targets in Lean and Nanoda. The permitted axioms are `propext`, `Classical.choice`, and `Quot.sound`.
 
-[Challenge](KEBallComparator/Challenge.lean) · [Statements](KEBallComparator/Statements.lean) · [Solution](KEBallComparator/Solution.lean) · [Configuration](KEBallComparator/config.json) · [Linux verification receipt](verification/receipt.json) · [Reproduction instructions](KEBallComparator/README.md)
+The run checked [source commit `d0124ef`](https://github.com/HongyuChern/KE-ball-symmetry-lean/commit/d0124efb8508eb9e46ce481fe6bd1cae07ad5adb). The checked source and build inputs match v0.1.1. [Linux verification receipt](https://github.com/HongyuChern/KE-ball-symmetry-lean/blob/d775fd1ff8a99a5f740b468088f526a5f8fa72aa/verification/receipt.json)
+
+[Challenge](KEBallComparator/Challenge.lean) · [Statements](KEBallComparator/Statements.lean) · [Solution](KEBallComparator/Solution.lean) · [Configuration](KEBallComparator/config.json) · [Reproduction instructions](KEBallComparator/README.md)
 
 ## Source and attribution
 
